@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Immigration Medical Examination</title>
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/vendors/slicknav/slicknav.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/fontawesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png" />
+  </head>
+
+  <body>
+    <!-- header html start -->
+      <header class="site-header">
+        <div class="main-header">
+          <div class="container-fluid">
+            <div class="main-header-wrapper d-flex justify-content-between align-items-center">
+              <div class="site-logo">
+                <a href="./index.html"><img src="./assets/image/gandhi-logo.png" alt="Gandhi Hospital" /></a>
+              </div>
+              <div class="header-contact btn btn-sm btn-primary">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:">+977-01-421 7766</a>
+              </div>
+              <div class="menu-wrapper d-flex align-item-center jus">
+                <nav class="primary-menu d-flex align-items-center gap-4">
+                  <ul class="d-flex gap-4">
+                    <li class="d-flex align-items-center">
+                      <p class="mb-0">IME Helpline:</p>
+                      <a href="tel:">+977-01-421 7766</a>
+                    </li>
+                    <li>
+                      <a href="immigration.html">Request Appointment</a>
+                    </li>
+                    <li>
+                      <a href="./view-appointment.html">Reschedule/ Cancle Appointment</a>
+                    </li>
+                  </ul>
+                </nav>
+                <button class="sideBar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#SideMenu"
+                  aria-controls="SideMenu">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+      
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="SideMenu" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <nav class="primary-side-menu d-lg-flex align-items-center gap-4">
+                      <ul class="d-flex flex-column">
+                        <li class="d-flex align-item-center">
+                          <p style="padding: 35px 0; margin-bottom: 0;">IME Helpline:</p>
+                          <a href="tel:">+977-01-421 7766</a>
+                        </li>
+                        <li>
+                          <a href="immigration.html">Request Appointment</a>
+                        </li>
+                        <li>
+                          <a href="./view-appointment.html">Reschedule/ Cancle Appointment</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    <!-- header html end -->
+    <!-- start page header html -->
+    <section class="page-header block">
+      <div class="container">
+        <h1 class="h3">Departments</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="mx-2"><i class="fa-solid fa-angle-right"></i></span>
+          <a href="./immigration.html" class="active"
+            >Immigration Medical Examination</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- end page header html -->
+    <section class="doctor-detail immigration-detail block">
+      <div class="container">
+        <h1 class="h2 mb-3">
+          Book Appointment for Health Check for Visa Application
+        </h1>
+        <div class="row g-4">
+          <div class="col-md-12 col-lg-5">
+            <div class="consultation-title">
+              <h5 class="h6" style="margin-bottom: 20px">
+                Available dates for Appointment
+              </h5>
+            </div>
+            <div class="date-select">
+              <div class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link active d-flex flex-column align-items-center"
+                            id="pills-home-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              Today
+                            </span>
+                            <span style="font-size: 12px; color: black"
+                              >no Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-profile-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-profile"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              Tomorrow
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              24-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab1"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact1"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              25-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab2"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact2"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              26-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul>
+                        <li class="nav-item" role="presentation">
+                          <button
+                            class="nav-link d-flex flex-column align-items-center"
+                            id="pills-contact-tab3"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-contact"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-contact3"
+                            aria-selected="false"
+                          >
+                            <span style="font-size: 16px; font-weight: 500">
+                              27-Jan
+                            </span>
+                            <span style="font-size: 12px; color: green"
+                              >6 Slots available</span
+                            >
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="crossCalendar text-center">
+                    <i class="fa-regular fa-calendar-xmark"></i>
+                  </div>
+                  <p class="text-center" style="margin: 10px 0 20px 0">
+                    No slots available for today
+                  </p>
+                  <div class="check">
+                    <p>Kindly check for other date for availability</p>
+                  </div>
+                  <div
+                    class="call d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:">Call Now</a>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="row g-2 align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row g-2">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row g-2">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                  tabindex="0"
+                >
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row g-2">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row g-2">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact1"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab1"
+                  tabindex="0"
+                >
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row g-2">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row g-2">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact2"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab2"
+                  tabindex="0"
+                >
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact3"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab3"
+                  tabindex="0"
+                >
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-cloud-sun"></i>
+                      <p class="timesOfDay">Morning</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-sun"></i>
+                      <p class="timesOfDay">Afternoon</p>
+                    </div>
+                    <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="card time-card">
+                            <div class="card-body">
+                              <h5 class="h6 text-center">
+                                <a href="./abroad-form.html">9.00 AM</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-end mb-3">
+                    <div class="col-md-3">
+                      <i class="fa-solid fa-moon"></i>
+                      <p class="timesOfDay">Evening</p>
+                    </div>
+                    <div class="col-md-9"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="doctor-list" style="margin-top: 40px">
+              <div class="consultation-title text-center">
+                <h5 class="h6 text-center">Doctor's Panel</h5>
+              </div>
+              <div class="list-content">
+                <div class="row">
+                  <div class="col-md-6 p-0">
+                    <div class="content-title">
+                      <p class="title">Doctor Name</p>
+                    </div>
+                    <ul class="name-list">
+                      <li>Doctor name</li>
+                      <li>Doctor name</li>
+                      <li>Doctor name</li>
+                      <li>Doctor name</li>
+                      <li>Doctor name</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <div class="content-title">
+                      <p class="title">Qualification</p>
+                    </div>
+                    <ul class="name-list">
+                      <li>qualification</li>
+                      <li>qualification</li>
+                      <li>qualification</li>
+                      <li>qualification</li>
+                      <li>qualification</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-7">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  Australia
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  New Zealand
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+                tabindex="0"
+              >
+                <table class="country-record">
+                  <tr>
+                    <th>Items</th>
+                    <th>Code</th>
+                    <th>Fee (Nrs.)</th>
+                    <th>Example Applicant</th>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION + CHEST X-RAY+SERUM CREATININE</td>
+                    <td>501+502+705</td>
+                    <td>9850</td>
+                    <td>STUDENT(NON-HEALTHCARE), VISITOR</td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION WITH MANTOUX</td>
+                    <td>501 + 719</td>
+                    <td>6850</td>
+                    <td>
+                      CHILDREN AGED ABOVE 2 AND UNDER 11 YEARS APPLYING FOR A
+                      PERMANENT/ PROVISIONAL VISA
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION ONLY</td>
+                    <td>501</td>
+                    <td>5950</td>
+                    <td>CHILDREN BELOW 11 YEARS</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      MEDICAL EXAMINATION + CHEST X-RAY + HIV + SERUM CREATININE
+                    </td>
+                    <td>501+502+707+705</td>
+                    <td>10950</td>
+                    <td>PERMANENT/PROVISIONAL VISA (ABOVE 15 YEARS)</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      MEDICAL EXAMINATION + CHEST X-RAY+ HIV+ HEPATITIS
+                      B+HEPATITIS C+SERUM CREATININE
+                    </td>
+                    <td>501+502+707+ 708+716+705</td>
+                    <td>13950</td>
+                    <td>HEALTHCARE WORKER OR HEALTHCARE STUDENT</td>
+                  </tr>
+
+                  <tr>
+                    <td>CHEST X-RAY (AXR)</td>
+                    <td>502</td>
+                    <td>5450</td>
+                    <td>WORKING HOLIDAY MAKER</td>
+                  </tr>
+
+                  <tr>
+                    <td>HIV TEST</td>
+                    <td>707</td>
+                    <td>1330</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>HEPATITIS B TEST</td>
+                    <td>708</td>
+                    <td>1300</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>S. CREATININE</td>
+                    <td>705</td>
+                    <td>355</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>HEPATITIS C TEST</td>
+                    <td>716</td>
+                    <td>1880</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>MANTOUX TEST</td>
+                    <td>719</td>
+                    <td>430</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION + Serum Creatinine</td>
+                    <td>501 + 705</td>
+                    <td>6550</td>
+                    <td>ELDERLY VISITOR</td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION + CHEST X-RAY</td>
+                    <td>501+502</td>
+                    <td>9250</td>
+                    <td>CHILDREN AGED BETWEEN 11 YEARS TO 15 YEARS</td>
+                  </tr>
+                </table>
+                <p class="notice">
+                  *Includes TB diagnostic tests and peatment (if required) done
+                  at IOM, Baluwatar, KTM. Nepal.
+                </p>
+                <div class="row">
+                  <div class="col-md-12 col-lg-8 list-edit">
+                    <h6 style="font-weight: 400">
+                      WHAT DO I HAVE TO BRING ON THE DAY OF THE EXAMINATION?
+                    </h6>
+                    <ul style="list-style: disc; margin-bottom: 20px">
+                      <li>
+                        E-medical generated referral letter which has your HAP
+                        ID.
+                      </li>
+                      <li>
+                        Original passport (Compulsory) and declaration form if
+                        available.
+                      </li>
+                      <li>Spectacle/ Contact lenses if you wear one.</li>
+                      <li>
+                        For medical examination, you do not have to attend on an
+                        empty stomach.
+                      </li>
+                      <li>
+                        If you have received COVID-19 Vaccination, please bring
+                        a record of the Vaccination Card (Translated into
+                        English) / QR CODE Certificate issued by the Ministry of
+                        MoHP.
+                      </li>
+                      <li>
+                        Please do not bring excessive Cash/Jewelry and other
+                        valuables while coming for a medical examination
+                      </li>
+                    </ul>
+                    <div
+                      class="accordion accordion-flush mb-2"
+                      id="importantNotes"
+                    >
+                      <div class="accordion-item">
+                        <div class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-One"
+                            aria-expanded="false"
+                            aria-controls="flush-collapse-One"
+                          >
+                            <span class="h6 mb-0"
+                              >Click here for Important Notes</span
+                            >
+                          </button>
+                        </div>
+                        <div
+                          id="flush-collapse-One"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#importantNotes"
+                        >
+                          <div class="accordion-body">
+                            <div class="tests">
+                              <h6>Tests</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  The tests you require will depend on your visa
+                                  category.
+                                </li>
+                                <li>
+                                  Your referral letter will indicate lists tests
+                                  that are necessary for you.
+                                </li>
+                                <li>
+                                  501 code - Includes medical examination.
+                                </li>
+                                <li>
+                                  502 code - Chest X-ray (above 11 years of
+                                  age).
+                                </li>
+                                <li>705 code - Serum Creatinine.</li>
+                                <li>
+                                  Some children between 2~11 years may require
+                                  TB screening test.
+                                </li>
+                                <li>
+                                  Panel physician may request additional test as
+                                  per clinical requirement.
+                                </li>
+                              </ul>
+                              <p class="mb-1">
+                                If you have any queries, kindly discuss with our
+                                panel physician / staff.
+                              </p>
+                              <p>
+                                For more information about Australian Health
+                                Requirement please visit on the link below:
+                                <a href="#">WWW.australiainfo.com</a>
+                              </p>
+                            </div>
+
+                            <div class="tests">
+                              <h6>
+                                PROCESS DURING IMMIGRATION MEDICAL EXAMINATION
+                              </h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>Registration at Registration Desk.</li>
+                                <li>
+                                  ID Check – Referral Letter, Original passport
+                                  and Declaration form.
+                                </li>
+                                <li>Photograph</li>
+                                <li>
+                                  Height, Weight and Blood Pressure measurement.
+                                </li>
+                                <li>Blood Test- Serum Creatinine.</li>
+                                <li>
+                                  501 code - External physical examination
+                                  (includes vision test).
+                                </li>
+                                <li>502 code - Chest- X ray.</li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>FOR PREGNANT WOMEN</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Pregnant women will have option to choose X-
+                                  ray examination until after delivery. Kindly
+                                  discuss with our panel physician for more
+                                  details.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>REPORT DISSEMMINATION</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  You do not have to collect any report once all
+                                  your examinations are complete.
+                                </li>
+                                <li>
+                                  Your report is forwarded electronically via e
+                                  - Medical to the department of Home Affairs
+                                  within three working days in most cases.
+                                </li>
+                                <li>
+                                  If your examination or test results are
+                                  abnormal, our panel physician will inform you
+                                  during the consultation.
+                                </li>
+                              </ul>
+                              <p>
+                                If you require any further information regarding
+                                your medical examinations, please feel free to
+                                contact us.
+                              </p>
+                            </div>
+
+                            <div class="tests">
+                              <h6>UNDRESSING FOR MEDICAL EXAMINATION</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  As per guidelines provided by Department of
+                                  Home Affairs, you will need to undress to your
+                                  innerwear.
+                                </li>
+                                <li>
+                                  We provide gowns to both male and female
+                                  candidates and every effort is taken to
+                                  maintain your privacy. Only external physical
+                                  examination is conducted.
+                                </li>
+                                <li>
+                                  We offer chaperone to all applicants. All
+                                  children must be examined in the presence of a
+                                  guardian.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>INCASE X RAY SHOWS ABNORMALITY</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  The panel physician will inform you about the
+                                  result.
+                                </li>
+                                <li>
+                                  Sometimes e-medical can auto generate further
+                                  tests depending on the findings.
+                                </li>
+                                <li>
+                                  Once your case is submitted, MOC in Australia
+                                  will review your case and advice if any
+                                  further tests are required. Same will be
+                                  notified to the client via email.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>TESTS FOR TB</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  TB is tested by examination of sputum
+                                  (Authorized at IOM Laboratory only).
+                                </li>
+                                <li>
+                                  This is done in two ways- smear and culture.
+                                </li>
+                                <li>
+                                  Kindly note TB culture report takes 8 weeks
+                                  for the results.
+                                </li>
+                                <li>
+                                  There is no extra charge for TB tests and
+                                  treatment; it is included in the Hospital
+                                  bill.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>TB SCREENING FOR CHILDREN</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Children between the age of 2 & 11 years and
+                                  applying for a permanent / provisional visa
+                                  are required to undergo a TB screening test.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>SCREENING TEST FOR TB</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  There are two different types of screening
+                                  tests:
+                                </li>
+                                <li>
+                                  Mantoux- is an intra dermal test (skin).
+                                </li>
+                                <li>
+                                  IGRA- Interferon Gamma Release Assay is a
+                                  blood test.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>RESULT OF MANTOUX TEST</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Result of Mantoux test is recorded after 48-72
+                                  hours of injection. Kindly report to
+                                  Immigration Clinic for the final report.
+                                  Please ensure the child does not leave
+                                  Kathmandu until the final report is provided.
+                                </li>
+                                <li>
+                                  Our panel physicians will advise if additional
+                                  examination is required following the result
+                                  of Mantoux test.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>WAITING TIME IN CLINIC</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Generally, medical examination, blood test and
+                                  X- ray are completed within two-three hours.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>COMPLAINT PROCEDURE</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  If you are not satisfied with our service
+                                  kindly contact our manager/panel physician. We
+                                  will try and resolve the problem.
+                                </li>
+                                <li>
+                                  If you have any feedback, complaints or
+                                  compliments; kindly refer to the link below:
+                                  <a href="#"
+                                    >http://www.border.gov.au/about/contact/provide-feedback</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>CONTACT</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Telephone:
+                                  <a href="tel:"> +977-01-421 7766</a>
+                                </li>
+                                <li>
+                                  Email:
+                                  <a
+                                    href="mailto:gandhitulasimanohara@gmail.com"
+                                    >gandhiHospital@gmail.com</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>ADDRESS</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Kageshwori Manohara 9, Kadaghari, Kathmandu,
+                                  Nepal
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>PAYMENT MODE</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  We accept payment in cash/esewa/khalti mode
+                                  only.
+                                </li>
+                                <li>Payment through Cheque is not accepted.</li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>FRAUDULENT BEHAVIOUR</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Any fraudulent activity will be reported
+                                  directly to the department of Home Affairs.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>DISCLAIMER</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Gandhi Hospital requests its clients to be
+                                  aware the fraudulent activity/behavior
+                                  involving monetary benefits for faster
+                                  correspondence and appointments
+                                </li>
+                                <li>
+                                  Gandhi Hospital strongly cautions the public
+                                  against such ongoing fraud. Gandhi Hospital
+                                  hereby disclaims all such correspondences and
+                                  warns its customers to always take no action
+                                  for such approaches and exercise carefully for
+                                  such action.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+                tabindex="0"
+              >
+                <table class="country-record" style="width: 700px">
+                  <tr>
+                    <th style="width: 200px">Items</th>
+                    <th style="width: 150px">Code</th>
+                    <th style="width: 200px">Fee (Nrs.)</th>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION + CHEST X-RAY+SERUM CREATININE</td>
+                    <td>501+502+705</td>
+                    <td>9850</td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION WITH MANTOUX</td>
+                    <td>501 + 719</td>
+                    <td>6850</td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION ONLY</td>
+                    <td>501</td>
+                    <td>5950</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      MEDICAL EXAMINATION + CHEST X-RAY + HIV + SERUM CREATININE
+                    </td>
+                    <td>501+502+707+705</td>
+                    <td>10950</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      MEDICAL EXAMINATION + CHEST X-RAY+ HIV+ HEPATITIS
+                      B+HEPATITIS C+SERUM CREATININE
+                    </td>
+                    <td>501+502+707+ 708+716+705</td>
+                    <td>13950</td>
+                  </tr>
+
+                  <tr>
+                    <td>CHEST X-RAY (AXR)</td>
+                    <td>502</td>
+                    <td>5450</td>
+                  </tr>
+
+                  <tr>
+                    <td>HIV TEST</td>
+                    <td>707</td>
+                    <td>1330</td>
+                  </tr>
+
+                  <tr>
+                    <td>HEPATITIS B TEST</td>
+                    <td>708</td>
+                    <td>1300</td>
+                  </tr>
+
+                  <tr>
+                    <td>S. CREATININE</td>
+                    <td>705</td>
+                    <td>355</td>
+                  </tr>
+
+                  <tr>
+                    <td>HEPATITIS C TEST</td>
+                    <td>716</td>
+                    <td>1880</td>
+                  </tr>
+
+                  <tr>
+                    <td>MANTOUX TEST</td>
+                    <td>719</td>
+                    <td>430</td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION + Serum Creatinine</td>
+                    <td>501 + 705</td>
+                    <td>6550</td>
+                  </tr>
+
+                  <tr>
+                    <td>MEDICAL EXAMINATION + CHEST X-RAY</td>
+                    <td>501+502</td>
+                    <td>9250</td>
+                  </tr>
+                </table>
+                <p class="notice">
+                  *Includes TB diagnostic tests and peatment (if required) done
+                  at IOM, Baluwatar, KTM. Nepal.
+                </p>
+                <div class="row">
+                  <div class="col-md-8 list-edit">
+                    <h6 style="font-weight: 400">
+                      WHAT DO I HAVE TO BRING ON THE DAY OF THE EXAMINATION?
+                    </h6>
+                    <ul style="list-style: disc; margin-bottom: 20px">
+                      <li>
+                        E-medical generated referral letter which has your HAP
+                        ID.
+                      </li>
+                      <li>
+                        Original passport (Compulsory) and declaration form if
+                        available.
+                      </li>
+                      <li>Spectacle/ Contact lenses if you wear one.</li>
+                      <li>
+                        For medical examination, you do not have to attend on an
+                        empty stomach.
+                      </li>
+                      <li>
+                        If you have received COVID-19 Vaccination, please bring
+                        a record of the Vaccination Card (Translated into
+                        English) / QR CODE Certificate issued by the Ministry of
+                        MoHP.
+                      </li>
+                      <li>
+                        Please do not bring excessive Cash/Jewelry and other
+                        valuables while coming for a medical examination
+                      </li>
+                    </ul>
+                    <div
+                      class="accordion accordion-flush mb-2"
+                      id="importantNotes2"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                          >
+                            <span class="h6 mb-0"
+                              >Click here for Important Notes</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseOne"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#importantNotes2"
+                        >
+                          <div class="accordion-body">
+                            <div class="tests">
+                              <h6>Tests</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  The tests you require will depend on your visa
+                                  category.
+                                </li>
+                                <li>
+                                  Your referral letter will indicate lists tests
+                                  that are necessary for you.
+                                </li>
+                                <li>
+                                  501 code - Includes medical examination.
+                                </li>
+                                <li>
+                                  502 code - Chest X-ray (above 11 years of
+                                  age).
+                                </li>
+                                <li>705 code - Serum Creatinine.</li>
+                                <li>
+                                  Some children between 2~11 years may require
+                                  TB screening test.
+                                </li>
+                                <li>
+                                  Panel physician may request additional test as
+                                  per clinical requirement.
+                                </li>
+                              </ul>
+                              <p class="mb-1">
+                                If you have any queries, kindly discuss with our
+                                panel physician / staff.
+                              </p>
+                              <p>
+                                For more information about Australian Health
+                                Requirement please visit on the link below:
+                                <a href="#">WWW.australiainfo.com</a>
+                              </p>
+                            </div>
+
+                            <div class="tests">
+                              <h6>
+                                PROCESS DURING IMMIGRATION MEDICAL EXAMINATION
+                              </h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>Registration at Registration Desk.</li>
+                                <li>
+                                  ID Check – Referral Letter, Original passport
+                                  and Declaration form.
+                                </li>
+                                <li>Photograph</li>
+                                <li>
+                                  Height, Weight and Blood Pressure measurement.
+                                </li>
+                                <li>Blood Test- Serum Creatinine.</li>
+                                <li>
+                                  501 code - External physical examination
+                                  (includes vision test).
+                                </li>
+                                <li>502 code - Chest- X ray.</li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>FOR PREGNANT WOMEN</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Pregnant women will have option to choose X-
+                                  ray examination until after delivery. Kindly
+                                  discuss with our panel physician for more
+                                  details.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>REPORT DISSEMMINATION</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  You do not have to collect any report once all
+                                  your examinations are complete.
+                                </li>
+                                <li>
+                                  Your report is forwarded electronically via e
+                                  - Medical to the department of Home Affairs
+                                  within three working days in most cases.
+                                </li>
+                                <li>
+                                  If your examination or test results are
+                                  abnormal, our panel physician will inform you
+                                  during the consultation.
+                                </li>
+                              </ul>
+                              <p>
+                                If you require any further information regarding
+                                your medical examinations, please feel free to
+                                contact us.
+                              </p>
+                            </div>
+
+                            <div class="tests">
+                              <h6>UNDRESSING FOR MEDICAL EXAMINATION</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  As per guidelines provided by Department of
+                                  Home Affairs, you will need to undress to your
+                                  innerwear.
+                                </li>
+                                <li>
+                                  We provide gowns to both male and female
+                                  candidates and every effort is taken to
+                                  maintain your privacy. Only external physical
+                                  examination is conducted.
+                                </li>
+                                <li>
+                                  We offer chaperone to all applicants. All
+                                  children must be examined in the presence of a
+                                  guardian.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>INCASE X RAY SHOWS ABNORMALITY</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  The panel physician will inform you about the
+                                  result.
+                                </li>
+                                <li>
+                                  Sometimes e-medical can auto generate further
+                                  tests depending on the findings.
+                                </li>
+                                <li>
+                                  Once your case is submitted, MOC in Australia
+                                  will review your case and advice if any
+                                  further tests are required. Same will be
+                                  notified to the client via email.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>TESTS FOR TB</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  TB is tested by examination of sputum
+                                  (Authorized at IOM Laboratory only).
+                                </li>
+                                <li>
+                                  This is done in two ways- smear and culture.
+                                </li>
+                                <li>
+                                  Kindly note TB culture report takes 8 weeks
+                                  for the results.
+                                </li>
+                                <li>
+                                  There is no extra charge for TB tests and
+                                  treatment; it is included in the Hospital
+                                  bill.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>TB SCREENING FOR CHILDREN</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Children between the age of 2 & 11 years and
+                                  applying for a permanent / provisional visa
+                                  are required to undergo a TB screening test.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>SCREENING TEST FOR TB</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  There are two different types of screening
+                                  tests:
+                                </li>
+                                <li>
+                                  Mantoux- is an intra dermal test (skin).
+                                </li>
+                                <li>
+                                  IGRA- Interferon Gamma Release Assay is a
+                                  blood test.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>RESULT OF MANTOUX TEST</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Result of Mantoux test is recorded after 48-72
+                                  hours of injection. Kindly report to
+                                  Immigration Clinic for the final report.
+                                  Please ensure the child does not leave
+                                  Kathmandu until the final report is provided.
+                                </li>
+                                <li>
+                                  Our panel physicians will advise if additional
+                                  examination is required following the result
+                                  of Mantoux test.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>WAITING TIME IN CLINIC</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Generally, medical examination, blood test and
+                                  X- ray are completed within two-three hours.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>COMPLAINT PROCEDURE</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  If you are not satisfied with our service
+                                  kindly contact our manager/panel physician. We
+                                  will try and resolve the problem.
+                                </li>
+                                <li>
+                                  If you have any feedback, complaints or
+                                  compliments; kindly refer to the link below:
+                                  <a href="#"
+                                    >http://www.border.gov.au/about/contact/provide-feedback</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>CONTACT</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Telephone:
+                                  <a href="tel:"> +977-01-421 7766</a>
+                                </li>
+                                <li>
+                                  Email:
+                                  <a
+                                    href="mailto:gandhitulasimanohara@gmail.com"
+                                    >gandhiHospital@gmail.com</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>ADDRESS</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Kageshwori Manohara 9, Kadaghari, Kathmandu,
+                                  Nepal
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>PAYMENT MODE</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  We accept payment in cash/esewa/khalti mode
+                                  only.
+                                </li>
+                                <li>Payment through Cheque is not accepted.</li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>FRAUDULENT BEHAVIOUR</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Any fraudulent activity will be reported
+                                  directly to the department of Home Affairs.
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="tests">
+                              <h6>DISCLAIMER</h6>
+                              <ul
+                                style="list-style: decimal; margin-bottom: 20px"
+                              >
+                                <li>
+                                  Gandhi Hospital requests its clients to be
+                                  aware the fraudulent activity/behavior
+                                  involving monetary benefits for faster
+                                  correspondence and appointments
+                                </li>
+                                <li>
+                                  Gandhi Hospital strongly cautions the public
+                                  against such ongoing fraud. Gandhi Hospital
+                                  hereby disclaims all such correspondences and
+                                  warns its customers to always take no action
+                                  for such approaches and exercise carefully for
+                                  such action.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="row g-0">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <a href="tel:"
+                ><i class="fa-solid fa-mobile-screen-button"></i
+              ></a>
+            </div>
+            <div class="card-body">
+              <h4>Contact Hospital</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <a href="tel:"><i class="fa-solid fa-phone-volume"></i></a>
+            </div>
+            <div class="card-body">
+              <h4>Emmergency Call</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <button
+                type="button"
+                class="contact-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#mapModal"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="mapModal"
+                tabindex="-1"
+                aria-labelledby="mapModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4346.840800593961!2d85.36573847611349!3d27.696573425965422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a308af57ec1%3A0xcc780ae6ea8e8495!2sGandhi%20Tulasi%20Manohara%20Community%20Hospital!5e1!3m2!1sen!2snp!4v1738049776967!5m2!1sen!2snp"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4>Map & Direction</h4>
+              <a href="Map:"><span> Kageshwori Manohara 9, Kadaghari</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <a href="./heliAmbulance.html"
+                ><i class="fa-solid fa-helicopter"></i
+              ></a>
+            </div>
+            <div class="card-body">
+              <h4>Heli Rescue</h4>
+              <a href="tel:"><span>Heli:</span>9858777111</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer block">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-about">
+              <div class="footer-logo d-flex align-items-center gap-2 mb-4">
+                <a class="footer-logo-img" href="index.html"
+                  ><img src="./assets/image/gandhi-logo.png" alt="site logo"
+                /></a>
+                <h2 class="h4"><a href="index.html">Gandhi Hospital</a></h2>
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur egestas eu nunc dignissim feugiat. Fusce iaculis purus
+                non velit rhoncus tempus.
+              </p>
+              <div class="footer-social-icon d-flex gap-3 align-items-center">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 offset-lg-1">
+            <div class="footer-links">
+              <h6 class="mb-4">Quick Links</h6>
+              <ul>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./career.html">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="working-shedule">
+              <h6 class="mb-4">Working Time</h6>
+              <ul>
+                <li>Sunday - Thusday: 9:00 AM - 5:00 PM</li>
+                <li>Friday: 9:00 AM - 1:00 PM</li>
+                <li>Saturday: Closed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-conatact">
+              <h6 class="mb-4">Contact Us</h6>
+              <ul>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <a href="tel:9800000000">9800000000</a>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <a href="mailto:gandhitulasimanohara@gmail.com"
+                    >gandhiHospital@gmail.com</a
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <p class="mb-0">
+                    Kageshwori Manohara 9, Kadaghari, Kathmandu, Nepal
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendors/slicknav/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

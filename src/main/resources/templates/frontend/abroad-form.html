@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Form</title>
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/vendors/slicknav/slicknav.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/fontawesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png" />
+  </head>
+
+  <body>
+    <!-- header html start -->
+    <header class="site-header">
+      <div class="login-header">
+        <div class="container-fluid">
+          <div
+            class="top-header-wrapper d-flex justify-content-end align-items-center"
+          >
+            <ul class="d-flex align-items-center gap-4">
+              <li>
+                <a href="./login.html" class="btn btn-primary btn-sm">Log In</a>
+              </li>
+              <li>
+                <a href="./register.html" class="btn btn-primary btn-sm"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container-fluid">
+          <div
+            class="main-header-wrapper d-flex justify-content-between align-items-center"
+          >
+            <div class="site-logo">
+              <a href="./index.html"
+                ><img
+                  src="./assets/image/gandhi-logo.png"
+                  alt="Gandhi Hospital"
+              /></a>
+            </div>
+            <div class="header-contact btn btn-sm btn-primary">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:">+977-01-421 7766</a>
+            </div>
+            <div class="menu-wrapper d-flex align-items-center jus">
+              <nav class="primary-menu d-flex align-items-center gap-4">
+                <ul class="d-flex align-items-center gap-4">
+                  <li>
+                    <a href="#" class="btn btn-primary btn-sm">
+                      <i class="fa-solid fa-folder-open"></i>
+                      Instruction to Apply
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./career.html">
+                      <i class="fa-solid fa-house-chimney"></i>
+                      Job List
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./index.html">
+                      <i class="fa-solid fa-info"></i>
+                      About Us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button
+                class="sideBar-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#SideMenu"
+                aria-controls="SideMenu"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="SideMenu"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav class="primary-side-menu">
+                    <ul class="d-flex flex-column">
+                      <li>
+                        <a href="#" class="btn btn-primary btn-sm">
+                          <i class="fa-solid fa-folder-open"></i>
+                          Instruction to Apply
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./career.html" style="margin: 20px 0">
+                          <i class="fa-solid fa-house-chimney"></i>
+                          Job List
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./index.html">
+                          <i class="fa-solid fa-info"></i>
+                          About Us
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul class="mt-2">
+                      <li class="mb-2">
+                        <a href="./login.html" class="btn btn-primary btn-sm">Log In</a>
+                      </li>
+                      <li>
+                        <a href="./register.html" class="btn btn-primary btn-sm">Sign Up</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header html end -->
+    <!-- start page header html -->
+    <div class="appointment-form block">
+      <div class="container">
+        <form action="#">
+          <h2 class="heading-style text-center" style="margin-bottom: 80px">
+            Fill your detail
+          </h2>
+          <div class="row" style="padding-bottom: 30px">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="passNumber"
+                  >Passport number
+                  <span style="color: var(--primary-color)">*</span></label
+                >
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-passport"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="passNumber"
+                    placeholder="Required, Passport Number"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="HapId">HAP id</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-user"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="HapId"
+                    placeholder="Required, HAP ID"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="consultant">Consultant</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-stethoscope"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="consultant"
+                    placeholder="Panel Consultant"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding-bottom: 30px">
+            <div class="col-md-2">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-user"></i>
+                  <select name="title" id="title">
+                    <option value="mr">Mr</option>
+                    <option value="ms">Ms</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="dr">Dr</option>
+                    <option value="master">Master</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-user"></i>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Required,  First Name"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="mname">Middle Name</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-user"></i>
+                  <input
+                    type="text"
+                    name="mname"
+                    id="mname"
+                    placeholder="Enter Middle Name"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-user"></i>
+                  <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    placeholder="Required, Last Name"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding-bottom: 30px">
+            <div class="col-md-2">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <select name="gender" id="gender">
+                    <option value="none">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-calendar"></i>
+                  <input
+                    type="text"
+                    name="dob"
+                    id="dob"
+                    placeholder="dd/mm/yyyy"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="phone">Phone Number (+977)</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Required, Phone Number"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Required, Enter Email"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2" style="padding-bottom: 30px">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="address">Address</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Address"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2" style="padding-bottom: 30px">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="nationality">Nationality</label>
+                <div class="icon-input d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                  <select name="nationality" id="nationality">
+                    <option value="Nepal">Nepalese</option>
+                    <option value="India">Indian</option>
+                    <option value="China">Chinese</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="country">Country Applying For</label>
+                    <div class="icon-input d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-flag"></i>
+                        <select name="country" id="country">
+                            <option value="australia">Australia</option>
+                            <option value="zealand">New Zealand</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="remarks">Remarks</label>
+                    <div class="icon-input d-flex align-items-top gap-2">
+                        <i class="fa-solid fa-message"></i>
+                        <textarea name="remarks" id="remarks" placeholder="Remarks" class="form-control">
+
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-md-4 d-flex align-items-center gap-3">
+                <input type="checkbox" name="terms" id="terms">
+                <p class="mb-0">I agree with the Terms and Conditions</p>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md-120">
+                <a href="3" class="btn btn-primary w-100 btn-sm">
+                    Submit and Continue
+                </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="contact">
+      <div class="row g-0">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <a href="tel:"
+                ><i class="fa-solid fa-mobile-screen-button"></i
+              ></a>
+            </div>
+            <div class="card-body">
+              <h4>Contact Hospital</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <a href="tel:"><i class="fa-solid fa-phone-volume"></i></a>
+            </div>
+            <div class="card-body">
+              <h4>Emmergency Call</h4>
+              <a href="tel:"><span> +977-01-421 7766</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <button
+                type="button"
+                class="contact-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#mapModal"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="mapModal"
+                tabindex="-1"
+                aria-labelledby="mapModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4346.840800593961!2d85.36573847611349!3d27.696573425965422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1a308af57ec1%3A0xcc780ae6ea8e8495!2sGandhi%20Tulasi%20Manohara%20Community%20Hospital!5e1!3m2!1sen!2snp!4v1738049776967!5m2!1sen!2snp"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4>Map & Direction</h4>
+              <a href="Map:"><span> Kageshwori Manohara 9, Kadaghari</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="card contact-card text-center">
+            <div class="card-icon">
+              <a href="./heliAmbulance.html"
+                ><i class="fa-solid fa-helicopter"></i
+              ></a>
+            </div>
+            <div class="card-body">
+              <h4>Heli Rescue</h4>
+              <a href="tel:"><span>Heli:</span>9858777111</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer block">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-about">
+              <div class="footer-logo d-flex align-items-center gap-2 mb-4">
+                <a class="footer-logo-img" href="index.html"
+                  ><img src="./assets/image//gandhi-logo.png" alt="site logo"
+                /></a>
+                <h2 class="h4"><a href="index.html">Gandhi Hospital</a></h2>
+              </div>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur egestas eu nunc dignissim feugiat. Fusce iaculis purus
+                non velit rhoncus tempus.
+              </p>
+              <div class="footer-social-icon d-flex gap-3 align-items-center">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 offset-lg-1">
+            <div class="footer-links">
+              <h6 class="mb-4">Quick Links</h6>
+              <ul>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./career.html">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="working-shedule">
+              <h6 class="mb-4">Working Time</h6>
+              <ul>
+                <li>Sunday - Thusday: 9:00 AM - 5:00 PM</li>
+                <li>Friday: 9:00 AM - 1:00 PM</li>
+                <li>Saturday: Closed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-conatact">
+              <h6 class="mb-4">Contact Us</h6>
+              <ul>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <a href="tel:9800000000">9800000000</a>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <a href="mailto:gandhitulasimanohara@gmail.com"
+                    >gandhiHospital@gmail.com</a
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="footer-contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <p class="mb-0">
+                    Kageshwori Manohara 9, Kadaghari, Kathmandu, Nepal
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendors/slicknav/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
