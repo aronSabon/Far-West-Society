@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Header</title>
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/slicknav/slicknav.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/fontawesome/css/all.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/css/style.css" />
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/assets/frontend/assets/image/favicon.png" />
+</head>
+
+<body>
+<!-- header html start -->
+	
+	<header class="site-header">
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="top-header-wrapper d-flex justify-content-between align-items-center">
+                <ul class="d-flex align-items-center gap-4">
+                    <li class="d-flex align-items-center gap-2 flex-shrink-0">
+                        <span class="top-header-icon d-flex align-items-center justify-content-center">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+                        <p class="mb-0" th:text="#{topHeader.hours}">Sun-Fri 8am-8pm</p>
+                    </li>
+                    <li class="d-flex align-items-center gap-2 flex-shrink-0">
+                        <span class="top-header-icon d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <a href="tel:" th:text="#{topHeader.phone}">+977-01-421 7766</a>
+                    </li>
+                    <li class="d-flex align-items-center gap-2 flex-shrink-0">
+                        <span class="top-header-icon d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-hospital"></i>
+                        </span>
+                        <a href="tel:">
+                            <span th:text="#{topHeader.emergency}">Emergency: 1134</span>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center gap-2 flex-shrink-0">
+                        <span class="top-header-icon d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-helicopter"></i>
+                        </span>
+                        <a href="tel:">
+<!--                             <span th:text="#{topHeader.heliLabel}">Heli:</span>
+ -->                            <span th:text="#{topHeader.heli}">Heli: 9858777112</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="top-header-btn d-flex gap-2">
+                    <a href="#" class="btn-secondary btn-sm">
+                        <i class="me-2 fa-solid fa-house-chimney-medical"></i>
+                        <span th:text="#{topHeader.homeService}">Home Service</span>
+                    </a>
+                    <a href="./opd-appointment.html" class="btn-secondary btn-sm">
+                        <i class="me-2 fa-solid fa-calendar-check"></i>
+                        <span th:text="#{topHeader.appointment}">Appointment</span>
+                    </a>
+                    <div class="language-switcher d-flex gap-1">
+        <a href="?lang=en" class="btn btn-sm btn-outline-light">EN</a>
+        <a href="?lang=ne" class="btn btn-sm btn-outline-light">ने</a>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+        <div class="container-fluid">
+            <div class="main-header-wrapper d-flex justify-content-between align-items-center">
+                <div class="site-logo">
+                    <a href="./index.html">
+                        <img src="/assets/frontend/assets/image/gandhi-logo.png" th:alt="#{siteLogoAlt}" alt="Gandhi Hospital" />
+                    </a>
+                </div>
+
+                <div class="header-contact btn btn-sm btn-primary">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:" th:text="#{headerContact.phone}">+977-01-421 7766</a>
+                </div>
+
+                <div class="menu-wrapper d-flex align-item-center jus">
+                    <nav class="primary-menu d-flex align-items-center gap-4">
+                        <ul class="d-flex gap-sm-4">
+                            <li><a href="./About.html" th:text="#{menu.about}">About Us</a></li>
+                            <li class="dropdown">
+                                <a class="dropbtn" href="#" th:text="#{menu.appointments}">Appointments</a>
+                                <ul class="sub-menu">
+                                    <li><a href="./opd-appointment.html" th:text="#{menu.opdAppointment}">OPD Appointment</a></li>
+                                    <li><a href="./immigration.html" th:text="#{menu.immigration}">Immigration Medical Examination</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./Department.html" th:text="#{menu.departments}">Departments</a></li>
+                            <li><a href="./health-package.html" th:text="#{menu.healthPackages}">Health Packages</a></li>
+                            <li><a href="./career.html" th:text="#{menu.career}">Career</a></li>
+                            <li><a href="./contact.html" th:text="#{menu.contact}">Contact</a></li>
+                        </ul>
+
+                        <!-- Search Button -->
+                        <button type="button" class="btn btn-primary btn-circle search-btn" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalSearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                        <!-- Cart -->
+                        <div class="cart-icon" id="cart-icon">
+                            <button class="btn btn-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                                <i class="fa-solid fa-shopping-cart"></i>
+                                <span class="cart-count">2</span>
+                            </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasCartLabel" th:text="#{menu.cartList}">Cart List</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="cart-item">
+                                        <div class="row align-item-center mb-3">
+                                            <div class="col-3">
+                                                <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="Health Package" />
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="cart-item-info">
+                                                    <a href="./health-packageDetail.html" th:text="#{menu.standardCardiac}">Standard Cardiac Checkup Package</a>
+                                                    <p th:text="#{menu.price}">Rs. 99</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="delete-icon"><i class="fa-solid fa-trash-alt"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="./cart.html" class="btn btn-primary" th:text="#{menu.viewCart}">View Cart</a>
+                                    <a href="./checkout.html" class="btn btn-primary" th:text="#{menu.checkout}">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content flex-row-reverse">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="search d-flex">
+                        <input type="text" th:placeholder="#{menu.searchPlaceholder}" placeholder="के खोज्नुहुन्छ?" />
+                        <button type="submit" class="btn btn-primary" th:text="#{menu.searchButton}">खोज्नुहोस्</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	<!-- header html end -->
+<body>
+
+</body>
+</html>

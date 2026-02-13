@@ -4,298 +4,20 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Gandhi Hospital</title>
-	<link rel="stylesheet" href="./assets/vendors/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="./assets/vendors/slicknav/slicknav.min.css" />
-	<link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css" />
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./assets/css/style.css" />
+	<title>Far-West Society</title>
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/slicknav/slicknav.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/fontawesome/css/all.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/css/style.css" />
 	<!-- favicon -->
-	<link rel="icon" type="image/x-icon" href="./assets/image/favicon.png" />
+	<link rel="icon" type="image/x-icon" href="/assets/frontend/assets/image/favicon.png" />
 </head>
 
 <body>
 	<!-- header html start -->
-	<header class="site-header">
-		<div class="top-header">
-			<div class="container-fluid">
-				<div class="top-header-wrapper d-flex justify-content-between align-items-center">
-					<ul class="d-flex align-items-center gap-4">
-						<li class="d-flex align-items-center gap-2 flex-shrink-0">
-							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
-									class="fa-regular fa-clock"></i></span>
-							<p class="mb-0">Sun-Fri 8am-8pm</p>
-						</li>
-						<li class="d-flex align-items-center gap-2 flex-shrink-0">
-							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
-									class="fa-solid fa-phone"></i></span>
-							<a href="tel:"> +977-01-421 7766</a>
-						</li>
-						<li class="d-flex align-items-center gap-2 flex-shrink-0">
-							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
-									class="fa-solid fa-hospital"></i></span>
-							<a href="tel:"><span>Emergency:</span>1134</a>
-						</li>
-						<li class="d-flex align-items-center gap-2 flex-shrink-0">
-							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
-									class="fa-solid fa-helicopter"></i>
-							</span>
-							<a href="tel:"><span>Heli:</span>9858777112</a>
-						</li>
-					</ul>
-					<div class="top-header-btn d-flex gap-2">
-						<a href="#" class="btn-secondary btn-sm"><i
-								class="me-2 fa-solid fa-house-chimney-medical"></i>Home
-							Service</a>
-						<a href="./opd-appointment.html" class="btn-secondary btn-sm"><i
-								class="me-2 fa-solid fa-calendar-check"></i>Appointment</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="main-header">
-			<div class="container-fluid">
-				<div class="main-header-wrapper d-flex justify-content-between align-items-center">
-					<div class="site-logo">
-						<a href="./index.html"><img src="./assets/image/gandhi-logo.png" alt="Gandhi Hospital" /></a>
-					</div>
-					<div class="header-contact btn btn-sm btn-primary">
-						<i class="fa-solid fa-phone"></i>
-						<a href="tel:">+977-01-421 7766</a>
-					</div>
-					<div class="menu-wrapper d-flex align-item-center jus">
-						<nav class="primary-menu d-flex align-items-center gap-4">
-							<ul class="d-flex gap-sm-4">
-								<li>
-									<a href="./About.html">About Us</a>
-								</li>
-								<li class="dropdown">
-									<a class="dropbtn" href="#">Appointments</a>
-									<ul class="sub-menu">
-										<li>
-											<a href="./opd-appointment.html">OPD Appointment</a>
-										</li>
-										<li>
-											<a href="./immigration.html">Immigration Medicle Examination</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="./Department.html">Departments</a>
-								</li>
-								<li>
-									<a href="./health-package.html">Health Packages</a>
-								</li>
-								<li>
-									<a href="./career.html">Career</a>
-								</li>
-								<li>
-									<a href="./contact.html">Contact</a>
-								</li>
-							</ul>
-							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-primary btn-circle search-btn" data-bs-toggle="modal"
-								data-bs-target="#exampleModalSearch">
-								<i class="fa-solid fa-magnifying-glass"></i>
-							</button>
-							<div class="cart-icon" id="cart-icon">
-								<button class="btn btn-circle" type="button" data-bs-toggle="offcanvas"
-									data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-									<i class="fa-solid fa-shopping-cart"></i>
-									<span class="cart-count">2</span>
-								</button>
+	<th:block th:insert="/frontend/_Header.html"></th:block>
 
-								<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-									aria-labelledby="offcanvasRightLabel">
-									<div class="offcanvas-header">
-										<h5 class="offcanvas-title" id="offcanvasRightLabel">
-											Cart List
-										</h5>
-										<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-											aria-label="Close"></button>
-									</div>
-									<div class="offcanvas-body">
-										<div class="cart-item">
-											<div class="row align-item-center" style="padding-bottom: 20px">
-												<div class="col-md-3">
-													<div class="d-flex align-items-center gap-3">
-														<img src="./assets/image/gandhi-hospital-patients-3.jpg"
-															alt="Health Package" />
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="cart-item-info">
-														<a href="./health-packageDetail.html">Standard cadiac checkup
-															package</a>
-														<p class="mb-0">Rs. 99</p>
-													</div>
-												</div>
-												<div class="col-md-2">
-													<div class="delete-icon">
-														<i class="fa-solid fa-trash-alt"></i>
-													</div>
-												</div>
-											</div>
-											<div class="row align-item-center" style="padding-bottom: 20px">
-												<div class="col-md-3">
-													<img src="./assets/image/gandhi-hospital-patients-3.jpg"
-														alt="Health Package" />
-												</div>
-												<div class="col-md-6">
-													<div class="cart-item-info">
-														<a href="./health-packageDetail.html">Standard cadiac checkup
-															package</a>
-														<p>Rs. 99</p>
-													</div>
-												</div>
-												<div class="col-md-2">
-													<div class="delete-icon">
-														<i class="fa-solid fa-trash-alt"></i>
-													</div>
-												</div>
-											</div>
-										</div>
-										<a href="./cart.html" class="btn btn-primary">View Cart</a>
-										<a href="./checkout.html" class="btn btn-primary">Checkout</a>
-									</div>
-								</div>
-							</div>
-							<!-- Modal -->
-						</nav>
-
-						<button class="sideBar-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOne">
-							<i class="fa-solid fa-bars"></i>
-						</button>
-
-						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOne">
-							<div class="offcanvas-header">
-								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-							</div>
-							<div class="offcanvas-body">
-								<nav class="primary-side-menu">
-									<ul style="font-weight: 500">
-										<li class="mb-2">
-											<a href="./About.html">About Us</a>
-										</li>
-										<li class="dropdown mb-2">
-											<a class="dropbtn" href="#">Appointments</a>
-											<ul class="sub-menu">
-												<li>
-													<a href="./opd-appointment.html">OPD Appointment</a>
-												</li>
-												<li>
-													<a href="./immigration.html">Immigration Medicle Examination</a>
-												</li>
-											</ul>
-										</li>
-										<li class="mb-2">
-											<a href="./Department.html">Departments</a>
-										</li>
-										<li class="mb-2">
-											<a href="./health-package.html">Health Packages</a>
-										</li>
-										<li class="mb-2">
-											<a href="./career.html">Career</a>
-										</li>
-										<li class="mb-2">
-											<a href="./contact.html">Contact</a>
-										</li>
-										<li>
-											<a href="./cart.html" class="btn btn-primary"
-												style="color: var(--white-color)">Go to Cart</a>
-										</li>
-									</ul>
-								</nav>
-
-								<div class="top-header-btn-menu d-flex gap-2">
-									<a href="#" class="btn-secondary btn-sm"><i
-											class="me-2 fa-solid fa-house-chimney-medical"></i>Home Service</a>
-									<a href="./opd-appointment.html" class="btn-secondary btn-sm"><i
-											class="me-2 fa-solid fa-calendar-check"></i>Appointment</a>
-								</div>
-
-								<button type="button" class="btn btn-primary btn-circle search-btn"
-									data-bs-toggle="modal" data-bs-target="#exampleModalSearch" id="searchBtn">
-									<i class="fa-solid fa-magnifying-glass"></i>
-								</button>
-
-								<button class="cart-icon" id="openSecondOffcanvas">
-									<i class="fa-solid fa-shopping-cart"></i>
-									<span class="cart-count">2</span>
-								</button>
-							</div>
-						</div>
-
-						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTwo">
-							<div class="offcanvas-header">
-								<h5 class="offcanvas-title">Card List</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-							</div>
-							<div class="offcanvas-body">
-								<div class="cart-icon cart-item">
-									<div class="row align-item-center" style="padding-bottom: 20px">
-										<div class="col-3">
-											<div class="d-flex align-items-center gap-3">
-												<img src="./assets/image/gandhi-hospital-patients-3.jpg"
-													alt="Health Package" />
-											</div>
-										</div>
-										<div class="col-6">
-											<div class="cart-item-info">
-												<a href="./health-packageDetail.html">Standard cadiac checkup
-													package</a>
-												<p class="mb-0">Rs. 99</p>
-											</div>
-										</div>
-										<div class="col-2">
-											<div class="delete-icon">
-												<i class="fa-solid fa-trash-alt"></i>
-											</div>
-										</div>
-									</div>
-									<div class="row align-item-center" style="padding-bottom: 20px">
-										<div class="col-3">
-											<img src="./assets/image/gandhi-hospital-patients-3.jpg"
-												alt="Health Package" />
-										</div>
-										<div class="col-6">
-											<div class="cart-item-info">
-												<a href="./health-packageDetail.html">Standard cadiac checkup
-													package</a>
-												<p>Rs. 99</p>
-											</div>
-										</div>
-										<div class="col-2">
-											<div class="delete-icon">
-												<i class="fa-solid fa-trash-alt"></i>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a href="./cart.html" class="btn btn-primary">View Cart</a>
-								<a href="./checkout.html" class="btn btn-primary">Checkout</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content flex-row-reverse">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<div class="search d-flex">
-						<input type="text" placeholder="Tell me to search for you" />
-						<button type="submit" class="btn btn-primary">Search</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- header html end -->
 
@@ -303,7 +25,7 @@
 	<section class="swiper banner">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide" style="
-						background-image: url(./assets/image/gandhi-hospital-banner-first-img.jpg);
+						background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-first-img.jpg);
 					">
 				<div class="container">
 					<div class="banner-content">
@@ -320,7 +42,7 @@
 				</div>
 			</div>
 			<div class="swiper-slide" style="
-						background-image: url(./assets/image/gandhi-hospital-banner-sec-img.jpg);
+						background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-sec-img.jpg);
 					">
 				<div class="container">
 					<div class="banner-content">
@@ -337,7 +59,7 @@
 				</div>
 			</div>
 			<div class="swiper-slide" style="
-						background-image: url(./assets/image/gandhi-hospital-banner-third-img.jpg);
+						background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-third-img.jpg);
 					">
 				<div class="container">
 					<div class="banner-content">
@@ -369,10 +91,10 @@
 						<div class="card-body text-center">
 							<div class="facility-icon">
 								<a href="./opd-appointment.html">
-									<img class="green" src="./assets/image/facility-icon1.svg" alt="facility-icon" />
+									<img class="green" src="/assets/frontend/assets/image/facility-icon1.svg" alt="facility-icon" />
 								</a>
 								<a href="./opd-appointment.html">
-									<img class="white" src="./assets/image/facility-icon1-white.svg"
+									<img class="white" src="/assets/frontend/assets/image/facility-icon1-white.svg"
 										alt="facility-icon" />
 								</a>
 							</div>
@@ -390,10 +112,10 @@
 						<div class="card-body text-center">
 							<div class="facility-icon">
 								<a href="./opd-appointment.html">
-									<img class="green" src="./assets/image/facility-icon2.svg" alt="facility-icon" />
+									<img class="green" src="/assets/frontend/assets/image/facility-icon2.svg" alt="facility-icon" />
 								</a>
 								<a href="./opd-appointment.html">
-									<img class="white" src="./assets/image/facility-icon2-white.svg"
+									<img class="white" src="/assets/frontend/assets/image/facility-icon2-white.svg"
 										alt="facility-icon" />
 								</a>
 							</div>
@@ -411,10 +133,10 @@
 						<div class="card-body text-center">
 							<div class="facility-icon">
 								<a href="./opd-appointment.html">
-									<img class="green" src="./assets/image/facility-icon3.svg" alt="facility-icon" />
+									<img class="green" src="/assets/frontend/assets/image/facility-icon3.svg" alt="facility-icon" />
 								</a>
 								<a href="./opd-appointment.html">
-									<img class="white" src="./assets/image/facility-icon3-white.svg"
+									<img class="white" src="/assets/frontend/assets/image/facility-icon3-white.svg"
 										alt="facility-icon" />
 								</a>
 							</div>
@@ -459,7 +181,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -470,7 +192,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/MedicalOncology-Icon-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/MedicalOncology-Icon-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -481,7 +203,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/Cardiology-Icon-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/Cardiology-Icon-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -492,7 +214,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -503,7 +225,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -514,7 +236,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -525,7 +247,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -536,7 +258,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -547,7 +269,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -558,7 +280,7 @@
 									<a href="./Department-detail.html">
 										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
 											<div class="image-group">
-												<img class="green" src="./assets/image/anesthesia&pain-green.svg"
+												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
 													alt="Anesthesia and pain management" />
 											</div>
 											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
@@ -574,7 +296,7 @@
 				</div>
 				<!-- <div class="col-md-6">
                     <div class="specialist-img position-relative h-100">
-                        <img class="h-100" src="./assets/image/doctor-consult-illustration.svg"
+                        <img class="h-100" src="/assets/frontend/assets/image/doctor-consult-illustration.svg"
                             alt="doctor-consult-illustration">
                         <div class="poster-text position-absolute">
                             <h3 class="h4 text-white">Looking for an Expert</h3>
@@ -599,7 +321,7 @@
 					<div class="swiper-slide">
 						<div class="card excellence-card text-center">
 							<div class="excellence-thumb">
-								<img src="./assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
+								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
 							</div>
 							<div class="card-body">
 								<h3 class="h6 excellence-title">
@@ -615,7 +337,7 @@
 					<div class="swiper-slide">
 						<div class="card excellence-card text-center">
 							<div class="excellence-thumb">
-								<img src="./assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
+								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
 							</div>
 							<div class="card-body">
 								<h3 class="h6 excellence-title">
@@ -631,7 +353,7 @@
 					<div class="swiper-slide">
 						<div class="card excellence-card text-center">
 							<div class="excellence-thumb">
-								<img src="./assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
+								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
 							</div>
 							<div class="card-body">
 								<h3 class="h6 excellence-title">
@@ -647,7 +369,7 @@
 					<div class="swiper-slide">
 						<div class="card excellence-card text-center">
 							<div class="excellence-thumb">
-								<img src="./assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
+								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
 							</div>
 							<div class="card-body">
 								<h3 class="h6 excellence-title">
@@ -663,7 +385,7 @@
 					<div class="swiper-slide">
 						<div class="card excellence-card text-center">
 							<div class="excellence-thumb">
-								<img src="./assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
+								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
 							</div>
 							<div class="card-body">
 								<h3 class="h6 excellence-title">
@@ -821,7 +543,7 @@
 					<div class="swiper-slide">
 						<div class="card package-card justify-content-between">
 							<div class="card-img">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
 							</div>
 							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
 								<h3 class="h6">
@@ -843,7 +565,7 @@
 					<div class="swiper-slide">
 						<div class="card package-card">
 							<div class="card-img">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
 							</div>
 							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
 								<h3 class="h6">
@@ -865,7 +587,7 @@
 					<div class="swiper-slide">
 						<div class="card package-card">
 							<div class="card-img">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
 							</div>
 							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
 								<h3 class="h6">
@@ -887,7 +609,7 @@
 					<div class="swiper-slide">
 						<div class="card package-card">
 							<div class="card-img">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
 							</div>
 							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
 								<h3 class="h6"><a href="#">Obesity package</a></h3>
@@ -905,7 +627,7 @@
 					<div class="swiper-slide">
 						<div class="card package-card">
 							<div class="card-img">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
 							</div>
 							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
 								<h3 class="h6"><a href="#">Basic health package</a></h3>
@@ -941,7 +663,7 @@
 							<div class="row align-items-center">
 								<div class="col-md-6">
 									<div class="card-img">
-										<img src="./assets/image/gandhi-hospital-patients-3.jpg"
+										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
 											alt="speciality center image" />
 									</div>
 								</div>
@@ -964,7 +686,7 @@
 							<div class="row align-items-center">
 								<div class="col-md-6">
 									<div class="card-img">
-										<img src="./assets/image/gandhi-hospital-patients-3.jpg"
+										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
 											alt="speciality center image" />
 									</div>
 								</div>
@@ -987,7 +709,7 @@
 							<div class="row align-items-center">
 								<div class="col-md-6">
 									<div class="card-img">
-										<img src="./assets/image/gandhi-hospital-patients-3.jpg"
+										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
 											alt="speciality center image" />
 									</div>
 								</div>
@@ -1010,7 +732,7 @@
 							<div class="row align-items-center">
 								<div class="col-md-6">
 									<div class="card-img">
-										<img src="./assets/image/gandhi-hospital-patients-3.jpg"
+										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
 											alt="speciality center image" />
 									</div>
 								</div>
@@ -1047,7 +769,7 @@
 					<div class="card news-card">
 						<div class="card-img">
 							<a href="#">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
 							</a>
 							<span class="date">july 1 2024</span>
 						</div>
@@ -1062,7 +784,7 @@
 					<div class="card news-card">
 						<div class="card-img">
 							<a href="#">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
 							</a>
 							<span class="date">july 1 2024</span>
 						</div>
@@ -1077,7 +799,7 @@
 					<div class="card news-card">
 						<div class="card-img">
 							<a href="#">
-								<img src="./assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
+								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
 							</a>
 							<span class="date">july 1 2024</span>
 						</div>
@@ -1092,101 +814,8 @@
 		</div>
 	</section>
 
-	<footer class="site-footer block">
-		<div class="container">
-			<div class="row gy-5">
-				<div class="col-md-6 col-lg-3">
-					<div class="footer-about">
-						<div class="footer-logo d-flex align-items-center gap-2 mb-4">
-							<a class="footer-logo-img" href="index.html"><img src="./assets/image/gandhi-logo.png"
-									alt="site logo" /></a>
-							<h2 class="h4"><a href="index.html">Gandhi Hospital</a></h2>
-						</div>
-						<p class="mb-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Curabitur egestas eu nunc dignissim feugiat. Fusce iaculis purus
-							non velit rhoncus tempus.
-						</p>
-						<div class="footer-social-icon d-flex gap-3 align-items-center">
-							<a href="#">
-								<i class="fa-brands fa-facebook-f"></i>
-							</a>
-							<a href="#">
-								<i class="fa-brands fa-x-twitter"></i>
-							</a>
-							<a href="#">
-								<i class="fa-brands fa-instagram"></i>
-							</a>
-							<a href="#">
-								<i class="fa-brands fa-youtube"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-2 offset-lg-1">
-					<div class="footer-links">
-						<h6 class="mb-4">Quick Links</h6>
-						<ul>
-							<li><a href="./About.html">About Us</a></li>
-							<li><a href="./contact.html">Contact Us</a></li>
-							<li><a href="./career.html">Careers</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="working-shedule">
-						<h6 class="mb-4">Working Time</h6>
-						<ul>
-							<li>Sunday - Thusday: 9:00 AM - 5:00 PM</li>
-							<li>Friday: 9:00 AM - 1:00 PM</li>
-							<li>Saturday: Closed</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="footer-conatact">
-						<h6 class="mb-4">Contact Us</h6>
-						<ul>
-							<li class="d-flex align-items-center gap-2">
-								<span class="footer-contact-icon">
-									<i class="fa-solid fa-phone"></i>
-								</span>
-								<a href="tel:9800000000">9800000000</a>
-							</li>
-							<li class="d-flex align-items-center gap-2">
-								<span class="footer-contact-icon">
-									<i class="fa-solid fa-envelope"></i>
-								</span>
-								<a href="mailto:gandhitulasimanohara@gmail.com">gandhiHospital@gmail.com</a>
-							</li>
-							<li class="d-flex align-items-center gap-2">
-								<span class="footer-contact-icon">
-									<i class="fa-solid fa-location-dot"></i>
-								</span>
-								<p class="mb-0">
-									Kageshwori Manohara 9, Kadaghari, Kathmandu, Nepal
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<div id="popup" data-popup>
-		<div id="popup-content">
-			<span id="popup-close" data-popup-close>&times;</span>
-			<img src="./assets/image/gandhi-hospital-patients-1.jpg" alt="">
-		</div>
-	</div>
-
-
-	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
-	<script src="./assets/vendors/slicknav/jquery.slicknav.min.js"></script>
-	<script src="./assets/js/bootstrap.bundle.min.js"></script>
-	<script src="./assets/js/script.js"></script>
+		<th:block th:insert="/frontend/_Footer.html"></th:block>
+	
 </body>
 
 </html>

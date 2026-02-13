@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ne" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{title}">Page Title</title>
+</head>
+<body>
+
+<h1 th:text="#{title}">Hello World!</h1>
+<p th:text="#{description}">This page will be translated to Nepali.</p>
+<p th:text="#{hospital}">kageshwori manohara nagar hospital</p>
+
+<!-- Optional: Language switch -->
+<p>
+    <a href="?lang=en">English</a> | 
+    <a href="?lang=ne">नेपाली</a>
+</p>
+
+</body>
+</html>

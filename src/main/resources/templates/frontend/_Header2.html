@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Header</title>
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/slicknav/slicknav.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/vendors/fontawesome/css/all.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/assets/frontend/assets/css/style.css" />
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/assets/frontend/assets/image/favicon.png" />
+</head>
+
+<body>
+<!-- header html start -->
+	<header class="site-header">
+		<div class="top-header">
+			<div class="container-fluid">
+				<div class="top-header-wrapper d-flex justify-content-between align-items-center">
+					<ul class="d-flex align-items-center gap-4">
+						<li class="d-flex align-items-center gap-2 flex-shrink-0">
+							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
+									class="fa-regular fa-clock"></i></span>
+							<p class="mb-0">Sun-Fri 8am-8pm</p>
+						</li>
+						<li class="d-flex align-items-center gap-2 flex-shrink-0">
+							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
+									class="fa-solid fa-phone"></i></span>
+							<a href="tel:"> +977-01-421 7766</a>
+						</li>
+						<li class="d-flex align-items-center gap-2 flex-shrink-0">
+							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
+									class="fa-solid fa-hospital"></i></span>
+							<a href="tel:"><span>Emergency:</span>1134</a>
+						</li>
+						<li class="d-flex align-items-center gap-2 flex-shrink-0">
+							<span class="top-header-icon d-flex align-items-center justify-content-center"><i
+									class="fa-solid fa-helicopter"></i>
+							</span>
+							<a href="tel:"><span>Heli:</span>9858777112</a>
+						</li>
+					</ul>
+					<div class="top-header-btn d-flex gap-2">
+						<a href="#" class="btn-secondary btn-sm"><i
+								class="me-2 fa-solid fa-house-chimney-medical"></i>Home
+							Service</a>
+						<a href="./opd-appointment.html" class="btn-secondary btn-sm"><i
+								class="me-2 fa-solid fa-calendar-check"></i>Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-header">
+			<div class="container-fluid">
+				<div class="main-header-wrapper d-flex justify-content-between align-items-center">
+					<div class="site-logo">
+						<a href="./index.html"><img src="/assets/frontend/assets/image/gandhi-logo.png" alt="Gandhi Hospital" /></a>
+					</div>
+					<div class="header-contact btn btn-sm btn-primary">
+						<i class="fa-solid fa-phone"></i>
+						<a href="tel:">+977-01-421 7766</a>
+					</div>
+					<div class="menu-wrapper d-flex align-item-center jus">
+						<nav class="primary-menu d-flex align-items-center gap-4">
+							<ul class="d-flex gap-sm-4">
+								<li>
+									<a href="./About.html">About Us</a>
+								</li>
+								<li class="dropdown">
+									<a class="dropbtn" href="#">Appointments</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="./opd-appointment.html">OPD Appointment</a>
+										</li>
+										<li>
+											<a href="./immigration.html">Immigration Medicle Examination</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="./Department.html">Departments</a>
+								</li>
+								<li>
+									<a href="./health-package.html">Health Packages</a>
+								</li>
+								<li>
+									<a href="./career.html">Career</a>
+								</li>
+								<li>
+									<a href="./contact.html">Contact</a>
+								</li>
+							</ul>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary btn-circle search-btn" data-bs-toggle="modal"
+								data-bs-target="#exampleModalSearch">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+							<div class="cart-icon" id="cart-icon">
+								<button class="btn btn-circle" type="button" data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+									<i class="fa-solid fa-shopping-cart"></i>
+									<span class="cart-count">2</span>
+								</button>
+
+								<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+									aria-labelledby="offcanvasRightLabel">
+									<div class="offcanvas-header">
+										<h5 class="offcanvas-title" id="offcanvasRightLabel">
+											Cart List
+										</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+											aria-label="Close"></button>
+									</div>
+									<div class="offcanvas-body">
+										<div class="cart-item">
+											<div class="row align-item-center" style="padding-bottom: 20px">
+												<div class="col-md-3">
+													<div class="d-flex align-items-center gap-3">
+														<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+															alt="Health Package" />
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="cart-item-info">
+														<a href="./health-packageDetail.html">Standard cadiac checkup
+															package</a>
+														<p class="mb-0">Rs. 99</p>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="delete-icon">
+														<i class="fa-solid fa-trash-alt"></i>
+													</div>
+												</div>
+											</div>
+											<div class="row align-item-center" style="padding-bottom: 20px">
+												<div class="col-md-3">
+													<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+														alt="Health Package" />
+												</div>
+												<div class="col-md-6">
+													<div class="cart-item-info">
+														<a href="./health-packageDetail.html">Standard cadiac checkup
+															package</a>
+														<p>Rs. 99</p>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="delete-icon">
+														<i class="fa-solid fa-trash-alt"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<a href="./cart.html" class="btn btn-primary">View Cart</a>
+										<a href="./checkout.html" class="btn btn-primary">Checkout</a>
+									</div>
+								</div>
+							</div>
+							<!-- Modal -->
+						</nav>
+
+						<button class="sideBar-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasOne">
+							<i class="fa-solid fa-bars"></i>
+						</button>
+
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOne">
+							<div class="offcanvas-header">
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+							</div>
+							<div class="offcanvas-body">
+								<nav class="primary-side-menu">
+									<ul style="font-weight: 500">
+										<li class="mb-2">
+											<a href="./About.html">About Us</a>
+										</li>
+										<li class="dropdown mb-2">
+											<a class="dropbtn" href="#">Appointments</a>
+											<ul class="sub-menu">
+												<li>
+													<a href="./opd-appointment.html">OPD Appointment</a>
+												</li>
+												<li>
+													<a href="./immigration.html">Immigration Medicle Examination</a>
+												</li>
+											</ul>
+										</li>
+										<li class="mb-2">
+											<a href="./Department.html">Departments</a>
+										</li>
+										<li class="mb-2">
+											<a href="./health-package.html">Health Packages</a>
+										</li>
+										<li class="mb-2">
+											<a href="./career.html">Career</a>
+										</li>
+										<li class="mb-2">
+											<a href="./contact.html">Contact</a>
+										</li>
+										<li>
+											<a href="./cart.html" class="btn btn-primary"
+												style="color: var(--white-color)">Go to Cart</a>
+										</li>
+									</ul>
+								</nav>
+
+								<div class="top-header-btn-menu d-flex gap-2">
+									<a href="#" class="btn-secondary btn-sm"><i
+											class="me-2 fa-solid fa-house-chimney-medical"></i>Home Service</a>
+									<a href="./opd-appointment.html" class="btn-secondary btn-sm"><i
+											class="me-2 fa-solid fa-calendar-check"></i>Appointment</a>
+								</div>
+
+								<button type="button" class="btn btn-primary btn-circle search-btn"
+									data-bs-toggle="modal" data-bs-target="#exampleModalSearch" id="searchBtn">
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</button>
+
+								<button class="cart-icon" id="openSecondOffcanvas">
+									<i class="fa-solid fa-shopping-cart"></i>
+									<span class="cart-count">2</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTwo">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title">Card List</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+							</div>
+							<div class="offcanvas-body">
+								<div class="cart-icon cart-item">
+									<div class="row align-item-center" style="padding-bottom: 20px">
+										<div class="col-3">
+											<div class="d-flex align-items-center gap-3">
+												<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+													alt="Health Package" />
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="cart-item-info">
+												<a href="./health-packageDetail.html">Standard cadiac checkup
+													package</a>
+												<p class="mb-0">Rs. 99</p>
+											</div>
+										</div>
+										<div class="col-2">
+											<div class="delete-icon">
+												<i class="fa-solid fa-trash-alt"></i>
+											</div>
+										</div>
+									</div>
+									<div class="row align-item-center" style="padding-bottom: 20px">
+										<div class="col-3">
+											<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+												alt="Health Package" />
+										</div>
+										<div class="col-6">
+											<div class="cart-item-info">
+												<a href="./health-packageDetail.html">Standard cadiac checkup
+													package</a>
+												<p>Rs. 99</p>
+											</div>
+										</div>
+										<div class="col-2">
+											<div class="delete-icon">
+												<i class="fa-solid fa-trash-alt"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a href="./cart.html" class="btn btn-primary">View Cart</a>
+								<a href="./checkout.html" class="btn btn-primary">Checkout</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content flex-row-reverse">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="search d-flex">
+						<input type="text" placeholder="Tell me to search for you" />
+						<button type="submit" class="btn btn-primary">Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header html end -->
+<body>
+
+</body>
+</html>
