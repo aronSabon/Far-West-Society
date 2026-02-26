@@ -1,4 +1,4 @@
-package com.nubi.fws.repository;
+package com.nubi.fws.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

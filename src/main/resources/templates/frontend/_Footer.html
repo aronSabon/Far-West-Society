@@ -6,99 +6,97 @@
 </head>
 <body>
 <footer class="site-footer block">
-		<div class="container">
-			<div class="row gy-5">
-				<div class="col-md-6 col-lg-3">
-					<div class="footer-about">
-						<div class="footer-logo d-flex align-items-center gap-2 mb-4">
-							<a class="footer-logo-img" href="index.html"><img src="./assets/image/gandhi-logo.png"
-									alt="site logo" /></a>
-							<h2 class="h4"><a href="index.html">Gandhi Hospital</a></h2>
-						</div>
-						<p class="mb-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Curabitur egestas eu nunc dignissim feugiat. Fusce iaculis purus
-							non velit rhoncus tempus.
-						</p>
-						<div class="footer-social-icon d-flex gap-3 align-items-center">
-							<a href="#">
-								<i class="fa-brands fa-facebook-f"></i>
-							</a>
-							<a href="#">
-								<i class="fa-brands fa-x-twitter"></i>
-							</a>
-							<a href="#">
-								<i class="fa-brands fa-instagram"></i>
-							</a>
-							<a href="#">
-								<i class="fa-brands fa-youtube"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-2 offset-lg-1">
-					<div class="footer-links">
-						<h6 class="mb-4">Quick Links</h6>
-						<ul>
-							<li><a href="./About.html">About Us</a></li>
-							<li><a href="./contact.html">Contact Us</a></li>
-							<li><a href="./career.html">Careers</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="working-shedule">
-						<h6 class="mb-4">Working Time</h6>
-						<ul>
-							<li>Sunday - Thusday: 9:00 AM - 5:00 PM</li>
-							<li>Friday: 9:00 AM - 1:00 PM</li>
-							<li>Saturday: Closed</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="footer-conatact">
-						<h6 class="mb-4">Contact Us</h6>
-						<ul>
-							<li class="d-flex align-items-center gap-2">
-								<span class="footer-contact-icon">
-									<i class="fa-solid fa-phone"></i>
-								</span>
-								<a href="tel:9800000000">9800000000</a>
-							</li>
-							<li class="d-flex align-items-center gap-2">
-								<span class="footer-contact-icon">
-									<i class="fa-solid fa-envelope"></i>
-								</span>
-								<a href="mailto:gandhitulasimanohara@gmail.com">gandhiHospital@gmail.com</a>
-							</li>
-							<li class="d-flex align-items-center gap-2">
-								<span class="footer-contact-icon">
-									<i class="fa-solid fa-location-dot"></i>
-								</span>
-								<p class="mb-0">
-									Kageshwori Manohara 9, Kadaghari, Kathmandu, Nepal
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+    <div class="container">
+        <div class="row gy-5">
 
-	<div id="popup" data-popup>
-		<div id="popup-content">
-			<span id="popup-close" data-popup-close>&times;</span>
-			<img src="/assets/frontend/assets/image/gandhi-hospital-patients-1.jpg" alt="">
-		</div>
-	</div>
+            <!-- About Section -->
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-about">
+                    <div class="footer-logo d-flex align-items-center gap-2 mb-4">
+                        <a href="index.html">
+                            <img src="/assets/frontend/assets/image/farWestLogo.png" th:alt="#{footer.logoAlt}" alt="site logo" />
+                        </a>
+                        <h2 class="h4"><a href="index.html" th:text="#{footer.name}">Far West Society</a></h2>
+                    </div>
+                    <p class="mb-4" th:text="#{footer.description}">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas eu nunc dignissim feugiat. Fusce iaculis purus non velit rhoncus tempus.
+                    </p>
+                    <div class="footer-social-icon d-flex gap-3 align-items-center">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Quick Links -->
+            <div class="col-md-6 col-lg-2 offset-lg-1">
+                <div class="footer-links">
+                    <h6 class="mb-4" th:text="#{footer.quickLinks}">Quick Links</h6>
+                    <ul>
+                        <li><a href="./About.html" th:text="#{menu.about}">About Us</a></li>
+                        <li><a href="./contact.html" th:text="#{menu.contact}">Contact Us</a></li>
+                        <li><a href="./career.html" th:text="#{menu.career}">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
 
-	<script src="/assets/frontend/assets/js/jquery.min.js"></script>
-	<script src="/assets/frontend/assets/vendors/swiper/swiper-bundle.min.js"></script>
-	<script src="/assets/frontend/assets/vendors/slicknav/jquery.slicknav.min.js"></script>
-	<script src="/assets/frontend/assets/js/bootstrap.bundle.min.js"></script>
-	<script src="/assets/frontend/assets/js/script.js"></script>
+            <!-- Working Time -->
+            <div class="col-md-6 col-lg-3">
+                <div class="working-schedule">
+                    <h6 class="mb-4" th:text="#{footer.workingTime}">Working Time</h6>
+                    <ul>
+                        <li th:text="#{footer.sundayToThursday}">Sunday - Thursday: 9:00 AM - 5:00 PM</li>
+                        <li th:text="#{footer.friday}">Friday: 9:00 AM - 1:00 PM</li>
+                        <li th:text="#{footer.saturday}">Saturday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-contact">
+                    <h6 class="mb-4" th:text="#{footer.contactUs}">Contact Us</h6>
+                    <ul>
+                        <li class="d-flex align-items-center gap-2">
+                            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+                            <a href="tel:9800000000" th:text="#{footer.phone}">9800000000</a>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <a href="mailto:farwestsociety@gmail.com" th:text="#{footer.email}">....@gmail.com</a>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <p class="mb-0" th:text="#{footer.address}">Kathmandu, Nepal</p>
+                        </li>
+                    </ul>
+
+                    <!-- Language Switcher -->
+                    <div class="mt-3">
+                        <a th:href="@{?lang=en}" th:classappend="${#locale.language == 'en'} ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-outline-light'">EN</a>
+                        <a th:href="@{?lang=ne}" th:classappend="${#locale.language == 'ne'} ? 'btn btn-sm btn-primary' : 'btn btn-sm btn-outline-light'">ने</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- Popup -->
+<div id="popup" data-popup>
+    <div id="popup-content">
+        <span id="popup-close" data-popup-close>&times;</span>
+        <img src="/assets/frontend/assets/image/gandhi-hospital-patients-1.jpg" alt="">
+    </div>
+</div>
+
+<script src="/assets/frontend/assets/js/jquery.min.js"></script>
+<script src="/assets/frontend/assets/vendors/swiper/swiper-bundle.min.js"></script>
+<script src="/assets/frontend/assets/vendors/slicknav/jquery.slicknav.min.js"></script>
+<script src="/assets/frontend/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/frontend/assets/js/script.js"></script>
 </body>
 </html>

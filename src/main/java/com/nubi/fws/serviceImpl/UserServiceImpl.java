@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.nubi.fws.model.User;
-import com.nubi.fws.repository.UserRepo;
+import com.nubi.fws.repo.UserRepo;
 import com.nubi.fws.service.UserService;
 
 public class UserServiceImpl implements UserService {

@@ -22,410 +22,319 @@
 	<!-- header html end -->
 
 	<!-- banner html start -->
-	<section class="swiper banner">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide" style="
-						background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-first-img.jpg);
-					">
-				<div class="container">
-					<div class="banner-content">
-						<h1 class="text-white">
-							Gandhi Tulasi Manohara Community Hospital
-						</h1>
-						<p>
-							GANDHI TULASI MANOHARA COMMUNITY HOSPITAL is a non-profit
-							medical service provider run by community organisation, with
-							strong and modern infrastructure.
-						</p>
-						<a href="./About.html" class="btn btn-primary">View More</a>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide" style="
-						background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-sec-img.jpg);
-					">
-				<div class="container">
-					<div class="banner-content">
-						<h1 class="text-white">
-							Gandhi Tulasi Manohara Community Hospital
-						</h1>
-						<p>
-							GANDHI TULASI MANOHARA COMMUNITY HOSPITAL is a non-profit
-							medical service provider run by community organisation, with
-							strong and modern infrastructure.
-						</p>
-						<a href="./About.html" class="btn btn-primary">View More</a>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide" style="
-						background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-third-img.jpg);
-					">
-				<div class="container">
-					<div class="banner-content">
-						<h1 class="text-white">
-							Gandhi Tulasi Manohara Community Hospital
-						</h1>
-						<p>
-							GANDHI TULASI MANOHARA COMMUNITY HOSPITAL is a non-profit
-							medical service provider run by community organisation, with
-							strong and modern infrastructure.
-						</p>
-						<a href="./About.html" class="btn btn-primary">View More</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-pagination"></div>
-	</section>
+<section class="swiper banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-first-img.jpg);">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="text-white" th:text="#{banner.title}">Gandhi Tulasi Manohara Community Hospital</h1>
+                    <p th:text="#{banner.description}">GANDHI TULASI MANOHARA COMMUNITY HOSPITAL is a non-profit medical service provider run by community organisation, with strong and modern infrastructure.</p>
+                    <a href="./About.html" class="btn btn-primary" th:text="#{banner.viewMore}">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-sec-img.jpg);">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="text-white" th:text="#{banner.title}">Gandhi Tulasi Manohara Community Hospital</h1>
+                    <p th:text="#{banner.description}">GANDHI TULASI MANOHARA COMMUNITY HOSPITAL is a non-profit medical service provider run by community organisation, with strong and modern infrastructure.</p>
+                    <a href="./About.html" class="btn btn-primary" th:text="#{banner.viewMore}">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-image: url(/assets/frontend/assets/image/gandhi-hospital-banner-third-img.jpg);">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="text-white" th:text="#{banner.title}">Gandhi Tulasi Manohara Community Hospital</h1>
+                    <p th:text="#{banner.description}">GANDHI TULASI MANOHARA COMMUNITY HOSPITAL is a non-profit medical service provider run by community organisation, with strong and modern infrastructure.</p>
+                    <a href="./About.html" class="btn btn-primary" th:text="#{banner.viewMore}">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</section>
 	<!-- banner html end -->
 
 	<!-- facility html start -->
 	<div class="facility block">
-		<div class="container">
-			<div class="row g-4">
-				<div class="col-md-6 col-lg-4">
-					<div class="card facility-card">
-						<div class="card-body text-center">
-							<div class="facility-icon">
-								<a href="./opd-appointment.html">
-									<img class="green" src="/assets/frontend/assets/image/facility-icon1.svg" alt="facility-icon" />
-								</a>
-								<a href="./opd-appointment.html">
-									<img class="white" src="/assets/frontend/assets/image/facility-icon1-white.svg"
-										alt="facility-icon" />
-								</a>
-							</div>
-							<div class="facility-content">
-								<h3 class="h5 mt-2 mb-2">
-									<a href="./opd-appointment.html">Find a Doctor</a>
-								</h3>
-								<p class="mb-0">Choose by name, specialty and more.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="card facility-card">
-						<div class="card-body text-center">
-							<div class="facility-icon">
-								<a href="./opd-appointment.html">
-									<img class="green" src="/assets/frontend/assets/image/facility-icon2.svg" alt="facility-icon" />
-								</a>
-								<a href="./opd-appointment.html">
-									<img class="white" src="/assets/frontend/assets/image/facility-icon2-white.svg"
-										alt="facility-icon" />
-								</a>
-							</div>
-							<div class="facility-content">
-								<h3 class="h5 mt-2 mb-2">
-									<a href="./opd-appointment.html">Find a Doctor</a>
-								</h3>
-								<p class="mb-0">Choose by name, specialty and more.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="card facility-card">
-						<div class="card-body text-center">
-							<div class="facility-icon">
-								<a href="./opd-appointment.html">
-									<img class="green" src="/assets/frontend/assets/image/facility-icon3.svg" alt="facility-icon" />
-								</a>
-								<a href="./opd-appointment.html">
-									<img class="white" src="/assets/frontend/assets/image/facility-icon3-white.svg"
-										alt="facility-icon" />
-								</a>
-							</div>
-							<div class="facility-content">
-								<h3 class="h5 mt-2 mb-2">
-									<a href="./opd-appointment.html">Find a Doctor</a>
-								</h3>
-								<p class="mb-0">Choose by name, specialty and more.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Facility 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card facility-card">
+                    <div class="card-body text-center">
+                        <div class="facility-icon">
+                            <a href="./opd-appointment.html">
+                                <img class="green" src="/assets/frontend/assets/image/facility-icon1.svg" alt="facility-icon" />
+                            </a>
+                            <a href="./opd-appointment.html">
+                                <img class="white" src="/assets/frontend/assets/image/facility-icon1-white.svg" alt="facility-icon" />
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h3 class="h5 mt-2 mb-2">
+                                <a href="./opd-appointment.html" th:text="#{facility.findDoctor.title}">Find a Doctor</a>
+                            </h3>
+                            <p class="mb-0" th:text="#{facility.findDoctor.desc}">Choose by name, specialty and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facility 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card facility-card">
+                    <div class="card-body text-center">
+                        <div class="facility-icon">
+                            <a href="./opd-appointment.html">
+                                <img class="green" src="/assets/frontend/assets/image/facility-icon2.svg" alt="facility-icon" />
+                            </a>
+                            <a href="./opd-appointment.html">
+                                <img class="white" src="/assets/frontend/assets/image/facility-icon2-white.svg" alt="facility-icon" />
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h3 class="h5 mt-2 mb-2">
+                                <a href="./opd-appointment.html" th:text="#{facility.bookAppointment.title}">Book an Appointment</a>
+                            </h3>
+                            <p class="mb-0" th:text="#{facility.bookAppointment.desc}">Schedule your visit easily.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facility 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card facility-card">
+                    <div class="card-body text-center">
+                        <div class="facility-icon">
+                            <a href="./health-package.html">
+                                <img class="green" src="/assets/frontend/assets/image/facility-icon3.svg" alt="facility-icon" />
+                            </a>
+                            <a href="./health-package.html">
+                                <img class="white" src="/assets/frontend/assets/image/facility-icon3-white.svg" alt="facility-icon" />
+                            </a>
+                        </div>
+                        <div class="facility-content">
+                            <h3 class="h5 mt-2 mb-2">
+                                <a href="./health-package.html" th:text="#{facility.healthPackages.title}">Health Packages</a>
+                            </h3>
+                            <p class="mb-0" th:text="#{facility.healthPackages.desc}">Explore our preventive care packages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 	<!-- facility html end -->
 
 	<!-- Specialities & Procedures html start -->
 	<section class="specialist block bg-white">
-		<div class="container">
-			<div class="row justify-content-center text-center">
-				<div class="col-md-6">
-					<h2 class="heading-style">Specialities & Procedures</h2>
-				</div>
-			</div>
-			<div class="row g-4 mt-4">
-				<div class="col-md-12">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item" role="presentation">
-							<button class="nav-link btn active" id="home-tab" data-bs-toggle="tab"
-								data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-								aria-selected="true">
-								Specialities
-							</button>
-						</li>
-					</ul>
-					<div class="tab-content mt-3" id="myTabContent">
-						<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-							aria-labelledby="home-tab" tabindex="0">
-							<div class="row g-4">
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/MedicalOncology-Icon-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/Cardiology-Icon-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-								<div class="col-md-6 col-lg-4">
-									<a href="./Department-detail.html">
-										<div class="specialities-inner d-flex gap-3 align-items-center p-3">
-											<div class="image-group">
-												<img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
-													alt="Anesthesia and pain management" />
-											</div>
-											<h3 class="h6 mb-0">Anesthesia and Pain Management</h3>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="text-center mt-4">
-							<a href="./Department.html" class="btn btn-primary">View All</a>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="col-md-6">
-                    <div class="specialist-img position-relative h-100">
-                        <img class="h-100" src="/assets/frontend/assets/image/doctor-consult-illustration.svg"
-                            alt="doctor-consult-illustration">
-                        <div class="poster-text position-absolute">
-                            <h3 class="h4 text-white">Looking for an Expert</h3>
-                            <p class="text-white"> Our team of most experienced doctors are here to help! </p>
-                            <a class="btn btn-primary" href="#">Find a Doctor</a>
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+                <h2 class="heading-style" th:text="#{specialities.heading}">Specialities & Procedures</h2>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link btn active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">
+                            <span th:text="#{specialities.heading}">Specialities</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-3" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                        aria-labelledby="home-tab" tabindex="0">
+                        <div class="row g-4">
+
+                            <!-- Department 1 -->
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./Department-detail.html">
+                                    <div class="specialities-inner d-flex gap-3 align-items-center p-3">
+                                        <div class="image-group">
+                                            <img class="green" src="/assets/frontend/assets/image/anesthesia&pain-green.svg"
+                                                alt="Anesthesia and pain management" />
+                                        </div>
+                                        <h3 class="h6 mb-0" th:text="#{department.anesthesia}">Anesthesia and Pain Management</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Department 2 -->
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./Department-detail.html">
+                                    <div class="specialities-inner d-flex gap-3 align-items-center p-3">
+                                        <div class="image-group">
+                                            <img class="green" src="/assets/frontend/assets/image/MedicalOncology-Icon-green.svg"
+                                                alt="Medical Oncology" />
+                                        </div>
+                                        <h3 class="h6 mb-0" th:text="#{department.medicalOncology}">Medical Oncology</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Department 3 -->
+                            <div class="col-md-6 col-lg-4">
+                                <a href="./Department-detail.html">
+                                    <div class="specialities-inner d-flex gap-3 align-items-center p-3">
+                                        <div class="image-group">
+                                            <img class="green" src="/assets/frontend/assets/image/Cardiology-Icon-green.svg"
+                                                alt="Cardiology" />
+                                        </div>
+                                        <h3 class="h6 mb-0" th:text="#{department.cardiology}">Cardiology</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Add more departments as needed, using i18n keys -->
+
                         </div>
                     </div>
-                </div> -->
-			</div>
-		</div>
-	</section>
+
+                    <div class="text-center mt-4">
+                        <a href="./Department.html" class="btn btn-primary" th:text="#{specialities.viewAll}">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 	<!-- Specialities & Procedures html end -->
 	<section class="excellence block">
-		<div class="container position-relative px-5">
-			<div class="row justify-content-center text-center mb-4">
-				<div class="col-md-6">
-					<h2 class="heading-style">Area Of Excellence</h2>
-				</div>
-			</div>
-			<div class="swiper exccellence-swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="card excellence-card text-center">
-							<div class="excellence-thumb">
-								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
-							</div>
-							<div class="card-body">
-								<h3 class="h6 excellence-title">
-									<a href="./Department-detail.html" class="border-line">Dentistry</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="./Department-detail.html" class="btn btn-primary btn-sm">View Details</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card excellence-card text-center">
-							<div class="excellence-thumb">
-								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
-							</div>
-							<div class="card-body">
-								<h3 class="h6 excellence-title">
-									<a href="./Department-detail.html" class="border-line">Medical Oncology</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="./Department-detail.html" class="btn btn-primary btn-sm">View Details</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card excellence-card text-center">
-							<div class="excellence-thumb">
-								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
-							</div>
-							<div class="card-body">
-								<h3 class="h6 excellence-title">
-									<a href="./Department-detail.html" class="border-line">Cardiology</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="./Department-detail.html" class="btn btn-primary btn-sm">View Details</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card excellence-card text-center">
-							<div class="excellence-thumb">
-								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
-							</div>
-							<div class="card-body">
-								<h3 class="h6 excellence-title">
-									<a href="./Department-detail.html" class="border-line">Dietetics And Nutrition</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="./Department-detail.html" class="btn btn-primary btn-sm">View Details</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card excellence-card text-center">
-							<div class="excellence-thumb">
-								<img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="icon-medical-service-3" />
-							</div>
-							<div class="card-body">
-								<h3 class="h6 excellence-title">
-									<a href="./Department-detail.html" class="border-line">Colorectal Surgery</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<a href="./Department-detail.html" class="btn btn-primary btn-sm">View Details</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		</div>
-	</section>
+    <div class="container position-relative px-5">
+        <div class="row justify-content-center text-center mb-4">
+            <div class="col-md-6">
+                <h2 class="heading-style" th:text="#{excellence.heading}">Area Of Excellence</h2>
+            </div>
+        </div>
+
+        <div class="swiper exccellence-swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card excellence-card text-center">
+                        <div class="excellence-thumb">
+                            <img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="Dentistry" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h6 excellence-title">
+                                <a href="./Department-detail.html" class="border-line" th:text="#{excellence.dentistry}">Dentistry</a>
+                            </h3>
+                            <p th:text="#{excellence.description}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="./Department-detail.html" class="btn btn-primary btn-sm" th:text="#{excellence.viewDetails}">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="card excellence-card text-center">
+                        <div class="excellence-thumb">
+                            <img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="Medical Oncology" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h6 excellence-title">
+                                <a href="./Department-detail.html" class="border-line" th:text="#{excellence.medicalOncology}">Medical Oncology</a>
+                            </h3>
+                            <p th:text="#{excellence.description}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="./Department-detail.html" class="btn btn-primary btn-sm" th:text="#{excellence.viewDetails}">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="card excellence-card text-center">
+                        <div class="excellence-thumb">
+                            <img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="Cardiology" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h6 excellence-title">
+                                <a href="./Department-detail.html" class="border-line" th:text="#{excellence.cardiology}">Cardiology</a>
+                            </h3>
+                            <p th:text="#{excellence.description}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="./Department-detail.html" class="btn btn-primary btn-sm" th:text="#{excellence.viewDetails}">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="card excellence-card text-center">
+                        <div class="excellence-thumb">
+                            <img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="Dietetics And Nutrition" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h6 excellence-title">
+                                <a href="./Department-detail.html" class="border-line" th:text="#{excellence.dietetics}">Dietetics And Nutrition</a>
+                            </h3>
+                            <p th:text="#{excellence.description}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="./Department-detail.html" class="btn btn-primary btn-sm" th:text="#{excellence.viewDetails}">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="card excellence-card text-center">
+                        <div class="excellence-thumb">
+                            <img src="/assets/frontend/assets/image/icon-medical-service-3.svg" alt="Colorectal Surgery" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h6 excellence-title">
+                                <a href="./Department-detail.html" class="border-line" th:text="#{excellence.colorectal}">Colorectal Surgery</a>
+                            </h3>
+                            <p th:text="#{excellence.description}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="./Department-detail.html" class="btn btn-primary btn-sm" th:text="#{excellence.viewDetails}">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
 
 	<section class="doctor-info block">
 		<div class="container">
 			<div class="row justify-content-end align-items-center text-end">
 				<div class="col-md-6">
 					<div class="doctor-details text-white">
-						<p class="mb-5">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-							vehicula turpis et tortor viverra tincidunt. Phasellus auctor
-							nec ligula eu condimentum. Vestibulum ullamcorper ultrices
-							lacus, ac venenatis dolor.
-						</p>
-						<h3 class="h5">Dr.Name</h3>
-						<div class="d-flex flex-column gap-2">
-							<span class="designation">Founder Chairman</span>
-							<span class="hospital-name">Gandhi Hospital</span>
-						</div>
+						<p class="mb-5" th:text="#{founder.description}">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula turpis et tortor viverra tincidunt. Phasellus auctor nec ligula eu condimentum. Vestibulum ullamcorper ultrices lacus, ac venenatis dolor.
+                    </p>
+                    <h3 class="h5" th:text="#{founder.name}">Mr. Name</h3>
+                    <div class="d-flex flex-column gap-2">
+                        <span class="designation" th:text="#{founder.designation}">Founder Chairman</span>
+                        <span class="organization" th:text="#{founder.organization}">Gandhi Hospital</span>
+                    </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
+	
 
 	<section class="patients block bg-white">
 		<div class="container">
@@ -437,211 +346,230 @@
 			<div class="swiper patient_swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-3.jpg" alt="gandhi hospital patients 1" />
-						<div class="patient-content">
-							<h3 class="h5">Patient Name</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								tincidunt justo vel dui congue, nonlobortis neque tincidunt.
-							</p>
-							<a href="#" class="btn btn-primary">View All</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-3.jpg" alt="gandhi hospital patients 2" />
-						<div class="patient-content">
-							<h3 class="h5">Patient Name</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								tincidunt justo vel dui congue, nonlobortis neque tincidunt.
-							</p>
-							<a href="#" class="btn btn-primary">View All</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-3.jpg" alt="gandhi hospital patients 3" />
-						<div class="patient-content">
-							<h3 class="h5">Patient Name</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								tincidunt justo vel dui congue, nonlobortis neque tincidunt.
-							</p>
-							<a href="#" class="btn btn-primary">View All</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-4.jpg" alt="gandhi hospital patients 4" />
-						<div class="patient-content">
-							<h3 class="h5">Patient Name</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								tincidunt justo vel dui congue, nonlobortis neque tincidunt.
-							</p>
-							<a href="#" class="btn btn-primary">View All</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-5.jpg" alt="gandhi hospital patients 5" />
-						<div class="patient-content">
-							<h3 class="h5">Patient Name</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								tincidunt justo vel dui congue, nonlobortis neque tincidunt.
-							</p>
-							<a href="#" class="btn btn-primary">View All</a>
-						</div>
-					</div>
+    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" 
+         alt="gandhi hospital patients 1" />
+    <div class="patient-content">
+        <h3 class="h5" th:text="#{patient.name}">Patient Name</h3>
+        <p th:text="#{patient.description}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt justo vel dui congue, non lobortis neque tincidunt.
+        </p>
+        <a href="#" class="btn btn-primary" th:text="#{patient.button}">View All</a>
+    </div>
+</div>
+<div class="swiper-slide">
+    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" 
+         alt="gandhi hospital patients 1" />
+    <div class="patient-content">
+        <h3 class="h5" th:text="#{patient.name}">Patient Name</h3>
+        <p th:text="#{patient.description}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt justo vel dui congue, non lobortis neque tincidunt.
+        </p>
+        <a href="#" class="btn btn-primary" th:text="#{patient.button}">View All</a>
+    </div>
+</div>
+<div class="swiper-slide">
+    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" 
+         alt="gandhi hospital patients 1" />
+    <div class="patient-content">
+        <h3 class="h5" th:text="#{patient.name}">Patient Name</h3>
+        <p th:text="#{patient.description}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt justo vel dui congue, non lobortis neque tincidunt.
+        </p>
+        <a href="#" class="btn btn-primary" th:text="#{patient.button}">View All</a>
+    </div>
+</div>
+<div class="swiper-slide">
+    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" 
+         alt="gandhi hospital patients 1" />
+    <div class="patient-content">
+        <h3 class="h5" th:text="#{patient.name}">Patient Name</h3>
+        <p th:text="#{patient.description}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt justo vel dui congue, non lobortis neque tincidunt.
+        </p>
+        <a href="#" class="btn btn-primary" th:text="#{patient.button}">View All</a>
+    </div>
+</div>
+<div class="swiper-slide">
+    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" 
+         alt="gandhi hospital patients 1" />
+    <div class="patient-content">
+        <h3 class="h5" th:text="#{patient.name}">Patient Name</h3>
+        <p th:text="#{patient.description}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt justo vel dui congue, non lobortis neque tincidunt.
+        </p>
+        <a href="#" class="btn btn-primary" th:text="#{patient.button}">View All</a>
+    </div>
+</div>
 				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
 			<div class="swiper patient_thumb_swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-3.jpg" alt="gandhi hospital patients 1" />
-						<div class="patient-content">
-							<h3 class="h5 mb-0">Patient Name</h3>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-3.jpg" alt="gandhi hospital patients 2" />
-						<div class="patient-content">
-							<h3 class="h5 mb-0">Patient Name</h3>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-3.jpg" alt="gandhi hospital patients 3" />
-						<div class="patient-content">
-							<h3 class="h5 mb-0">Patient Name</h3>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-4.jpg" alt="gandhi hospital patients 4" />
-						<div class="patient-content">
-							<h3 class="h5 mb-0">Patient Name</h3>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<img src="assets/image/gandhi-hospital-patients-5.jpg" alt="gandhi hospital patients 5" />
-						<div class="patient-content">
-							<h3 class="h5 mb-0">Patient Name</h3>
-						</div>
-					</div>
-				</div>
-			</div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="patient 1" />
+            <div class="patient-content">
+                <h3 class="h5 mb-0" th:text="#{patient.1}">Patient Name</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="patient 2" />
+            <div class="patient-content">
+                <h3 class="h5 mb-0" th:text="#{patient.2}">Patient Name</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="patient 3" />
+            <div class="patient-content">
+                <h3 class="h5 mb-0" th:text="#{patient.3}">Patient Name</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="patient 4" />
+            <div class="patient-content">
+                <h3 class="h5 mb-0" th:text="#{patient.4}">Patient Name</h3>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="patient 5" />
+            <div class="patient-content">
+                <h3 class="h5 mb-0" th:text="#{patient.5}">Patient Name</h3>
+            </div>
+        </div>
+    </div>
+</div>
 		</div>
 	</section>
-	<section class="package block">
-		<div class="container position-relative px-5">
-			<div class="row justify-content-center text-center mb-4">
-				<div class="col-md-6">
-					<h2 class="heading-style">Recommended Packages</h2>
-				</div>
-			</div>
-			<div class="swiper package_swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="card package-card justify-content-between">
-							<div class="card-img">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
-							</div>
-							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
-								<h3 class="h6">
-									<a href="./health-packageDetail.html">Standard cadiac chaeckup package</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<div class="price-box d-flex align-items-center gap-3">
-									<span class="old-price">NPR149</span>
-									<span class="price">NPR99</span>
-								</div>
-								<div class="d-flex align-items-center gap-3">
-									<a href="./health-packageDetail.html" class="btn btn-primary btn-sm">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card package-card">
-							<div class="card-img">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
-							</div>
-							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
-								<h3 class="h6">
-									<a href="./health-packageDetail.html">Comprehensive health package</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<div class="price-box d-flex align-items-center gap-3 mb-3">
-									<span class="old-price">NPR149</span>
-									<span class="price">NPR99</span>
-								</div>
-								<div class="d-flex align-items-center gap-3">
-									<a href="./health-packageDetail.html" class="btn btn-primary btn-sm">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card package-card">
-							<div class="card-img">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
-							</div>
-							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
-								<h3 class="h6">
-									<a href="./health-packageDetail.html">Obesity package-BMD</a>
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<div class="price-box d-flex align-items-center gap-3">
-									<span class="old-price">NPR149</span>
-									<span class="price">NPR99</span>
-								</div>
-								<div class="d-flex align-items-center gap-3">
-									<a href="./health-packageDetail.html" class="btn btn-primary btn-sm">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card package-card">
-							<div class="card-img">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
-							</div>
-							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
-								<h3 class="h6"><a href="#">Obesity package</a></h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<div class="price-box d-flex align-items-center gap-3">
-									<span class="old-price">NPR149</span>
-									<span class="price">NPR99</span>
-								</div>
-								<a href="#" class="btn btn-primary btn-sm">Book Now</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card package-card">
-							<div class="card-img">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
-							</div>
-							<div class="card-body d-flex flex-column flex-grow-1 align-items-start">
-								<h3 class="h6"><a href="#">Basic health package</a></h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-								<div class="price-box d-flex align-items-center gap-3">
-									<span class="old-price">NPR149</span>
-									<span class="price">NPR99</span>
-								</div>
-								<a href="#" class="btn btn-primary btn-sm">Book Now</a>
-							</div>
-						</div>
-					</div>
+<section class="package block">
+    <div class="container position-relative px-5">
+        <div class="row justify-content-center text-center mb-4">
+            <div class="col-md-6">
+                <h2 class="heading-style" th:text="#{package.heading}">Recommended Packages</h2>
+            </div>
+        </div>
+        <div class="swiper package_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card package-card justify-content-between">
+                        <div class="card-img">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+                        </div>
+                        <div class="card-body d-flex flex-column flex-grow-1 align-items-start">
+                            <h3 class="h6">
+                                <a href="./health-packageDetail.html" th:text="#{package.1.title}">Standard Cardiac Checkup Package</a>
+                            </h3>
+                            <p th:text="#{package.1.desc}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price-box d-flex align-items-center gap-3">
+                                <span class="old-price" th:text="#{package.1.oldPrice}">NPR149</span>
+                                <span class="price" th:text="#{package.1.price}">NPR99</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="./health-packageDetail.html" class="btn btn-primary btn-sm" th:text="#{package.1.button}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card package-card justify-content-between">
+                        <div class="card-img">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+                        </div>
+                        <div class="card-body d-flex flex-column flex-grow-1 align-items-start">
+                            <h3 class="h6">
+                                <a href="./health-packageDetail.html" th:text="#{package.1.title}">Standard Cardiac Checkup Package</a>
+                            </h3>
+                            <p th:text="#{package.1.desc}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price-box d-flex align-items-center gap-3">
+                                <span class="old-price" th:text="#{package.1.oldPrice}">NPR149</span>
+                                <span class="price" th:text="#{package.1.price}">NPR99</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="./health-packageDetail.html" class="btn btn-primary btn-sm" th:text="#{package.1.button}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card package-card justify-content-between">
+                        <div class="card-img">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+                        </div>
+                        <div class="card-body d-flex flex-column flex-grow-1 align-items-start">
+                            <h3 class="h6">
+                                <a href="./health-packageDetail.html" th:text="#{package.1.title}">Standard Cardiac Checkup Package</a>
+                            </h3>
+                            <p th:text="#{package.1.desc}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price-box d-flex align-items-center gap-3">
+                                <span class="old-price" th:text="#{package.1.oldPrice}">NPR149</span>
+                                <span class="price" th:text="#{package.1.price}">NPR99</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="./health-packageDetail.html" class="btn btn-primary btn-sm" th:text="#{package.1.button}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card package-card justify-content-between">
+                        <div class="card-img">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+                        </div>
+                        <div class="card-body d-flex flex-column flex-grow-1 align-items-start">
+                            <h3 class="h6">
+                                <a href="./health-packageDetail.html" th:text="#{package.1.title}">Standard Cardiac Checkup Package</a>
+                            </h3>
+                            <p th:text="#{package.1.desc}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price-box d-flex align-items-center gap-3">
+                                <span class="old-price" th:text="#{package.1.oldPrice}">NPR149</span>
+                                <span class="price" th:text="#{package.1.price}">NPR99</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="./health-packageDetail.html" class="btn btn-primary btn-sm" th:text="#{package.1.button}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card package-card justify-content-between">
+                        <div class="card-img">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+                        </div>
+                        <div class="card-body d-flex flex-column flex-grow-1 align-items-start">
+                            <h3 class="h6">
+                                <a href="./health-packageDetail.html" th:text="#{package.1.title}">Standard Cardiac Checkup Package</a>
+                            </h3>
+                            <p th:text="#{package.1.desc}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price-box d-flex align-items-center gap-3">
+                                <span class="old-price" th:text="#{package.1.oldPrice}">NPR149</span>
+                                <span class="price" th:text="#{package.1.price}">NPR99</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="./health-packageDetail.html" class="btn btn-primary btn-sm" th:text="#{package.1.button}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card package-card justify-content-between">
+                        <div class="card-img">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="package image" />
+                        </div>
+                        <div class="card-body d-flex flex-column flex-grow-1 align-items-start">
+                            <h3 class="h6">
+                                <a href="./health-packageDetail.html" th:text="#{package.1.title}">Standard Cardiac Checkup Package</a>
+                            </h3>
+                            <p th:text="#{package.1.desc}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="price-box d-flex align-items-center gap-3">
+                                <span class="old-price" th:text="#{package.1.oldPrice}">NPR149</span>
+                                <span class="price" th:text="#{package.1.price}">NPR99</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="./health-packageDetail.html" class="btn btn-primary btn-sm" th:text="#{package.1.button}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
 				</div>
 			</div>
 			<div class="swiper-button-next"></div>
@@ -649,107 +577,132 @@
 		</div>
 	</section>
 
-	<section class="speciality_center block">
-		<div class="container position-relative px-5">
-			<div class="row justify-content-center text-center">
-				<div class="col-md-6">
-					<h2 class="heading-style">Our Speciality Centers</h2>
-				</div>
-			</div>
-			<div class="swiper speciality_center_swiper mt-4">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="card speciality_center_card">
-							<div class="row align-items-center">
-								<div class="col-md-6">
-									<div class="card-img">
-										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
-											alt="speciality center image" />
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="card-body">
-										<h3><a href="#">Speciality Center Name</a></h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Mauris vehicula turpis et tortor viverra tincidunt.
-											Phasellus auctor nec ligula eu condimentum.
-										</p>
-										<a href="#" class="center-read">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card speciality_center_card align-items-center flex-row">
-							<div class="row align-items-center">
-								<div class="col-md-6">
-									<div class="card-img">
-										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
-											alt="speciality center image" />
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="card-body">
-										<h3><a href="#">Speciality Center Name</a></h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Mauris vehicula turpis et tortor viverra tincidunt.
-											Phasellus auctor nec ligula eu condimentum.
-										</p>
-										<a href="#" class="center-read">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card speciality_center_card align-items-center flex-row">
-							<div class="row align-items-center">
-								<div class="col-md-6">
-									<div class="card-img">
-										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
-											alt="speciality center image" />
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="card-body">
-										<h3><a href="#">Speciality Center Name</a></h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Mauris vehicula turpis et tortor viverra tincidunt.
-											Phasellus auctor nec ligula eu condimentum.
-										</p>
-										<a href="#" class="center-read">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="card speciality_center_card align-items-center flex-row">
-							<div class="row align-items-center">
-								<div class="col-md-6">
-									<div class="card-img">
-										<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
-											alt="speciality center image" />
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="card-body">
-										<h3><a href="#">Speciality Center Name</a></h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-											Mauris vehicula turpis et tortor viverra tincidunt.
-											Phasellus auctor nec ligula eu condimentum.
-										</p>
-										<a href="#" class="center-read">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+<section class="speciality_center block">
+    <div class="container position-relative px-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+                <h2 class="heading-style" th:text="#{speciality.heading}">Our Speciality Centers</h2>
+            </div>
+        </div>
+        <div class="swiper speciality_center_swiper mt-4">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card speciality_center_card">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-img">
+                                    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+                                         alt="speciality center image" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3>
+                                        <a href="#" th:text="#{speciality.1.name}">Cardiology Center</a>
+                                    </h3>
+                                    <p th:text="#{speciality.1.desc}">
+                                        Comprehensive cardiac care with expert doctors and modern equipment.
+                                    </p>
+                                    <a href="#" class="center-read" th:text="#{speciality.1.button}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card speciality_center_card">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-img">
+                                    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+                                         alt="speciality center image" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3>
+                                        <a href="#" th:text="#{speciality.1.name}">Cardiology Center</a>
+                                    </h3>
+                                    <p th:text="#{speciality.1.desc}">
+                                        Comprehensive cardiac care with expert doctors and modern equipment.
+                                    </p>
+                                    <a href="#" class="center-read" th:text="#{speciality.1.button}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card speciality_center_card">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-img">
+                                    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+                                         alt="speciality center image" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3>
+                                        <a href="#" th:text="#{speciality.1.name}">Cardiology Center</a>
+                                    </h3>
+                                    <p th:text="#{speciality.1.desc}">
+                                        Comprehensive cardiac care with expert doctors and modern equipment.
+                                    </p>
+                                    <a href="#" class="center-read" th:text="#{speciality.1.button}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card speciality_center_card">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-img">
+                                    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+                                         alt="speciality center image" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3>
+                                        <a href="#" th:text="#{speciality.1.name}">Cardiology Center</a>
+                                    </h3>
+                                    <p th:text="#{speciality.1.desc}">
+                                        Comprehensive cardiac care with expert doctors and modern equipment.
+                                    </p>
+                                    <a href="#" class="center-read" th:text="#{speciality.1.button}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="card speciality_center_card">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="card-img">
+                                    <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg"
+                                         alt="speciality center image" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h3>
+                                        <a href="#" th:text="#{speciality.1.name}">Cardiology Center</a>
+                                    </h3>
+                                    <p th:text="#{speciality.1.desc}">
+                                        Comprehensive cardiac care with expert doctors and modern equipment.
+                                    </p>
+                                    <a href="#" class="center-read" th:text="#{speciality.1.button}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
 				</div>
 			</div>
 			<div class="swiper-button-next"></div>
@@ -757,62 +710,73 @@
 		</div>
 	</section>
 
-	<section class="latest-news block">
-		<div class="container">
-			<div class="row justify-content-center text-center">
-				<div class="col-md-6">
-					<h2 class="heading-style">Latest News</h2>
-				</div>
-			</div>
-			<div class="row g-4 mt-4">
-				<div class="col-md-6 col-lg-4">
-					<div class="card news-card">
-						<div class="card-img">
-							<a href="#">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
-							</a>
-							<span class="date">july 1 2024</span>
-						</div>
-						<div class="card-body">
-							<h3 class="h6"><a href="./news.html">News Title</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="./news.html" class="center-read">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="card news-card">
-						<div class="card-img">
-							<a href="#">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
-							</a>
-							<span class="date">july 1 2024</span>
-						</div>
-						<div class="card-body">
-							<h3 class="h6"><a href="./news.html">News Title</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="./news.html" class="center-read">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="card news-card">
-						<div class="card-img">
-							<a href="#">
-								<img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
-							</a>
-							<span class="date">july 1 2024</span>
-						</div>
-						<div class="card-body">
-							<h3 class="h6"><a href="./news.html">News Title</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<a href="./news.html" class="center-read">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<section class="latest-news block">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+                <h2 class="heading-style" th:text="#{news.heading}">Latest News</h2>
+            </div>
+        </div>
+        <div class="row g-4 mt-4">
+            <!-- News Item 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card news-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
+                        </a>
+                        <span class="date" th:text="#{news.date}">july 1 2024</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h6">
+                            <a href="./news.html" th:text="#{news.1.title}">New Cardiology Wing Opened</a>
+                        </h3>
+                        <p th:text="#{news.1.desc}">We have inaugurated a new cardiology wing with modern equipment.</p>
+                        <a href="./news.html" class="center-read" th:text="#{news.1.button}">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card news-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
+                        </a>
+                        <span class="date" th:text="#{news.date}">july 1 2024</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h6">
+                            <a href="./news.html" th:text="#{news.2.title}">Free Health Camp</a>
+                        </h3>
+                        <p th:text="#{news.2.desc}">Our hospital organized a free health camp for the local community.</p>
+                        <a href="./news.html" class="center-read" th:text="#{news.2.button}">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card news-card">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="/assets/frontend/assets/image/gandhi-hospital-patients-3.jpg" alt="news image" />
+                        </a>
+                        <span class="date" th:text="#{news.date}">july 1 2024</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h6">
+                            <a href="./news.html" th:text="#{news.3.title}">Doctor Training Program</a>
+                        </h3>
+                        <p th:text="#{news.3.desc}">Our staff attended an advanced training program for patient care.</p>
+                        <a href="./news.html" class="center-read" th:text="#{news.3.button}">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 		<th:block th:insert="/frontend/_Footer.html"></th:block>
 	

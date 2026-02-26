@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+
+
+
+.edit-btn {
+	background-image: url('/images/icons/edit1.png');
+	margin:0 10px;
+}
+
+.delete-btn {
+	background-image: url('/images/icons/delete1.png');
+	margin:0 10px;
+	
+}
+
+.expire-btn {
+	background-image: url('/images/icons/expire.png');
+	margin:0 10px;
+}
+
+
+.add-btn {
+	background-image: url('/images/icons/add.png');
+	margin:0 10px;
+}
+
+.view-btn {
+	background-image: url('/images/icons/view3.png');
+	margin:0 10px;
+}
+.assign-btn {
+	background-image: url('/images/icons/assign.png');
+	margin:0 10px;
+}
+.print-btn {
+	background-image: url('/images/icons/print.png');
+	margin:0 10px;
+}
+.visited-btn {
+	background-image: url('/images/icons/walking.png');
+	margin:0 10px;
+	  width: 45px!important; 
+    height: 45px!important;
+}
+.close2-btn{
+	background-image:url('/images/icons/close2.png');
+		margin:0 10px;
+	
+}
+
+
+
+.icon-btn {
+    width: 35px; 
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    position: relative; /* Needed for tooltip positioning */
+}
+
+/* Tooltip styling */
+.icon-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%; /* Position above button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: darkblue;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+        pointer-events: none;
+}
+
+/* Show tooltip on hover */
+.icon-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+/* for message in admin header */
+/* .close-btn {
+    background-image: url('/images/icons/close.png');
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.close-notification-btn:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.close-notification-btn {
+    background-image: url('/images/icons/close.png');
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+} */
+

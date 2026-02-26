@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Add Home Slider</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+</head>
+
+<body>
+	<th:block th:insert="_Header.html"></th:block>
+	<th:block th:insert="_SideBar.html"></th:block>
+
+	<main id="main" class="main">
+
+		<div class="pagetitle">
+			<h1>Add Front Slider</h1>
+			<nav>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item">Pages</li>
+					<li class="breadcrumb-item active">Blank</li>
+				</ol>
+			</nav>
+		</div>
+
+		<section class="section">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Add Home Slider</h5>
+					
+					<form class="row g-3" method="post" action="/add-front-slider"
+						enctype="multipart/form-data">
+
+						<div class="col-md-12">
+							<input type="text" name="title" class="form-control"
+								placeholder="Title" required>
+						</div>
+
+						<div class="col-md-12">
+							<textarea name="description" class="form-control"
+								placeholder="Description" rows="5" required></textarea>
+						</div>
+
+						<div class="col-md-6">
+							<div class="input-group">
+								<label class="input-group-text">Image *</label> <input
+									type="file" class="form-control" name="image" accept="image/*"
+									required onchange="previewImage(event)">
+							</div>
+						</div>
+
+						<!-- Image Preview -->
+						<div class="col-md-6">
+							<img id="imagePreview" src="#" alt="Image Preview"
+								style="display: none; width: 150px; height: 150px; object-fit: cover; border-radius: 10px;">
+						</div>
+						
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary">Submit</button>
+							<!--<button type="reset" class="btn btn-secondary">Reset</button> -->
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+	<th:block th:insert="_Footer.html"></th:block>
+	<!-- 	script to preview the image uploaded before submitting-->
+	<script>
+function previewImage(event) {
+    const reader = new FileReader();
+    const imagePreview = document.getElementById('imagePreview');
+
+    reader.onload = function(){
+        imagePreview.src = reader.result;
+        imagePreview.style.display = "block";
+    }
+
+    reader.readAsDataURL(event.target.files[0]);
+}
+</script>
+
+</body>
+
+</html>
